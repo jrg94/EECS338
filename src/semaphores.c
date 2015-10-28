@@ -55,6 +55,12 @@ void semaphore_wait(int semid, int semnumber) {
 	}	
 }
 
+/**
+ * A wrapper function modeled after the wrappers seen in
+ * the cars example code
+ *
+ * Used to make a function for calling signal on a semaphore
+ */
 void semaphore_signal(int semid, int semnumber) {
 	
 	struct sembuf signal_buffer;
@@ -69,4 +75,14 @@ void semaphore_signal(int semid, int semnumber) {
 		exit(EXIT_FAILURE);
 	}
 
+}
+
+void process_fork(int deposit_or_withdraw, int request) {
+	pid_t child_pid;
+	child_pid = fork();
+
+	if (child_pid == -1) {
+		perror("Failed to fork process!\n");
+		exit(EXIT_FAILURE);
+	}
 }
