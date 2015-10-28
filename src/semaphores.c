@@ -77,12 +77,41 @@ void semaphore_signal(int semid, int semnumber) {
 
 }
 
+/**
+ * Forks processes based on the type of process
+ * that the user wants to occur
+ */
 void process_fork(int deposit_or_withdraw, int request) {
 	pid_t child_pid;
 	child_pid = fork();
 
+	// Fork failed
 	if (child_pid == -1) {
 		perror("Failed to fork process!\n");
 		exit(EXIT_FAILURE);
+	}
+
+	// We have a child process
+	else if (child_pid == 0) {
+
+		// Withdraw
+		if (deposit_or_withdraw == WITHDRAW) {
+			withdraw(request);
+		}
+		
+		// Deposit
+		else if (deposit_or_withdraw == DEPOSIT) {
+			deposit(request);
+		}
+
+		else {
+			printf("Invalid process type. Choose Withdraw or Deposit.\n");
+			exit(EXIT_FAILURE);
+		}
+	}
+
+	// Parent
+	else {
+		return;
 	}
 }

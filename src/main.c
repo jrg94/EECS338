@@ -31,5 +31,30 @@ int main(int argc, char *argv[]) {
 	shared_variables->balance = 500;
 	shared_variables->list = NULL;
 
+	process_fork(DEPOSIT, 100);
+	process_fork(DEPOSIT, 200);
+	process_fork(WITHDRAW, 500);
+
+	wait(NULL);
+	wait(NULL);
+	wait(NULL);
 	
+	printf("%d\n", shared_variables->balance);
+	printf("%d\n", shared_variables->wcount);
+
+	// Clean up
+	if (shmdt(shared_variables) == -1) {
+		perror("main failed at a call to shmdt");
+		exit(EXIT_FAILURE);
+	}	
+
+	if (shmctl(shmid, IPC_RMID, NULL) < 0) {
+		perror("main failed at a call to shmctl");
+		exit(EXIT_FAILURE);
+	}
+
+	if (semctl(semid, SEMAPHORE_MUTEX, IPC_RMID, semaphore_values) == -1) {
+		perror("main failed at a call to semctl");
+		exit(EXIT_FAILURE);
+	}
 }

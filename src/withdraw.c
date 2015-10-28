@@ -11,21 +11,21 @@ void withdraw(int request) {
 	struct shared_variable_struct *shared_variables = shmat(shmid, 0, 0);
 
 	// wait(mutex)
-	printf("PID: %d - Someone is waiting on mutex to withdraw.\n", getpid());
+	printf("PID: %d - Someone is waiting on mutex to withdraw $%d.\n", getpid(), request);
 	semaphore_wait(semid, SEMAPHORE_MUTEX);	
-	printf("PID: %d - Withdrawer has passed mutex.\n", getpid());
+	printf("PID: %d - Withdrawer:%d has passed mutex.\n", getpid(), request);
 
 	// if (wcount = 0 and balance > withdraw)
-	if (shared_variables->wcount == 0 && shared_variables->balance > request) {
-	//	{balance = balance - withdraw; signal(mutex)}
-		shared_variables->balance = shared_variables->balance + request;
+	if (shared_variables->wcount == 0 && shared_variables->balance >= request) {
+		//	{balance = balance - withdraw; signal(mutex)}
+		printf("PID: %d - A withdrawal of $%d was made!\n", getpid(), request);
+		shared_variables->balance = shared_variables->balance - request;
 		
-		printf("PID: %d - Withdrawer is signaling mutex.\n", getpid());
+		printf("PID: %d - Withdrawer:%d is signaling mutex.\n", getpid(), request);
 		semaphore_signal(semid, SEMAPHORE_MUTEX);	
 	}	
 	
 	// else {
-
 	else {
 		// wcount = wcount + 1;
 		shared_variables->wcount = shared_variables->wcount + 1;
@@ -34,7 +34,7 @@ void withdraw(int request) {
 		insertLast(shared_variables->list, request);
 
 		//	signal(mutex);
-		printf("PID: %d - Withdrawer is signaling mutex.\n", getpid());
+		printf("PID: %d - Withdrawer:%d is signaling mutex.\n", getpid(),request);
 		semaphore_signal(semid, SEMAPHORE_MUTEX);
 	
 		//	wait(wlist);
@@ -52,7 +52,7 @@ void withdraw(int request) {
 		shared_variables->wcount = shared_variables->wcount + 1;		
 
 		//	if (wcount > 1 and (FirstRequestAmount(LIST)) < balance)) signal(wlist)
-		if (shared_variables->wcount > 1 && getFirstRequestAmount(shared_variables->list) < shared_variables->balance) {
+		if (shared_variables->wcount > 0 && getFirstRequestAmount(shared_variables->list) < shared_variables->balance) {
 	
 			printf("PID: %d - Withdrawer is signaling the next withdrawer.\n", getpid());
 			semaphore_signal(semid, SEMAPHORE_WLIST);		
@@ -64,4 +64,6 @@ void withdraw(int request) {
 			semaphore_signal(semid, SEMAPHORE_MUTEX);
 		}
 	}
+
+	exit(EXIT_SUCCESS);
 }

@@ -19,6 +19,10 @@
 #define SEMAPHORE_WLIST         1
 #define NUMBER_OF_SEMAPHORES    2
 
+// A definition for the two types of processes
+#define WITHDRAW	1
+#define DEPOSIT		2
+
 // Functions
 int get_semid(key_t semkey);
 int get_shmid(key_t shmkey);
