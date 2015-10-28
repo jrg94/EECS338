@@ -46,3 +46,12 @@ void removeFirst(struct node *head) {
 int getFirstRequestAmount(struct node *head) {
 	return head->request;
 }
+
+void printList(struct node *head) {
+	struct node *temp = head;
+	while (temp != NULL) {
+		printf("%d -> ", temp->request);
+		temp = temp->next;
+	}
+	printf("\n");
+}

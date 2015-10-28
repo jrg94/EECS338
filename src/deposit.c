@@ -23,6 +23,7 @@ void deposit(int deposit) {
 	// if (wcount = 0) signal(mutex)
 	if (shared_variables->wcount == 0) {
 		printf("PID: %d - Depositer:%d is signaling mutex\n", getpid(), deposit);
+		print_memory(shared_variables);
 		semaphore_signal(semid, SEMAPHORE_MUTEX);
 	}
 
@@ -36,6 +37,11 @@ void deposit(int deposit) {
 	else {
 		printf("PID: %d - Depositer is signaling the wait list\n", getpid());
 		semaphore_signal(semid, SEMAPHORE_WLIST);
+	}
+
+	if (shmdt(shared_variables) == -1) {
+		perror("shmdt failed at end of deposit");
+		exit(EXIT_FAILURE);
 	}
 
 	exit(EXIT_SUCCESS);

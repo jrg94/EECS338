@@ -32,15 +32,15 @@ int main(int argc, char *argv[]) {
 	shared_variables->list = NULL;
 
 	process_fork(DEPOSIT, 100);
+	sleep(STALL_TIME);
 	process_fork(DEPOSIT, 200);
+	sleep(STALL_TIME);
 	process_fork(WITHDRAW, 500);
+	sleep(STALL_TIME);
 
 	wait(NULL);
 	wait(NULL);
 	wait(NULL);
-	
-	printf("%d\n", shared_variables->balance);
-	printf("%d\n", shared_variables->wcount);
 
 	// Clean up
 	if (shmdt(shared_variables) == -1) {

@@ -23,6 +23,9 @@
 #define WITHDRAW	1
 #define DEPOSIT		2
 
+// Integers for stalling
+#define STALL_TIME	2
+
 // Functions
 int get_semid(key_t semkey);
 int get_shmid(key_t shmkey);

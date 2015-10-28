@@ -10,7 +10,7 @@ _DEPS = as4.h
 DEPS = $(patsubst %, $(IDIR)/%, $(_DEPS))
 
 # Contains the list of object files to be linked
-_OBJ = main.o semaphores.o linked_list.o deposit.o withdraw.o
+_OBJ = main.o semaphores.o linked_list.o deposit.o withdraw.o test.o
 OBJ = $(patsubst %, $(ODIR)/%, $(_OBJ))
 
 # If any of the .c files or .h files change, run this section

@@ -22,6 +22,7 @@ void withdraw(int request) {
 		shared_variables->balance = shared_variables->balance - request;
 		
 		printf("PID: %d - Withdrawer:%d is signaling mutex.\n", getpid(), request);
+		print_memory(shared_variables);
 		semaphore_signal(semid, SEMAPHORE_MUTEX);	
 	}	
 	
@@ -63,6 +64,11 @@ void withdraw(int request) {
 			printf("PID: %d - Withdrawer is signaling mutex.\n", getpid());
 			semaphore_signal(semid, SEMAPHORE_MUTEX);
 		}
+	}
+
+	if (shmdt(shared_variables) == -1) {
+		perror("shmdt failed during a withdraw");
+		exit(EXIT_FAILURE);
 	}
 
 	exit(EXIT_SUCCESS);
