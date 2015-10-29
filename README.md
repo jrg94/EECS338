@@ -25,3 +25,9 @@ NOTES:
 	result, this solution can end up with the case where a withdraw
 	waits for any deposit before continuing. Of course, this means
 	that withdraws can cause the balance to go negative.
+
+	Several solutions were attempted such as allocating all the space
+	needed in the parent process then initializing those nodes. An array
+	was also used instead of a linked list. It was difficult to trace
+	the issue regardless. It seems shmat needs to be used to create 
+	shared memory spaces for every node.
