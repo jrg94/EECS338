@@ -1,5 +1,8 @@
 /**
  * Author: Jeremy Griffith
+ * 
+ * The header file which links 
+ * all of the object files together
  */
 
 #include <sys/types.h>
@@ -30,16 +33,19 @@
 int get_semid(key_t semkey);
 int get_shmid(key_t shmkey);
 
+// The shared memory struct
 struct shared_variable_struct {
 	int wcount;
 	int balance;
 	struct linked_list *list;
 };
 
+// A linked list struct
 struct linked_list {
 	struct node *head;
 };
 
+// The semun union
 union semun {
 	int val;
 	struct semid_ds *buf;
@@ -47,6 +53,7 @@ union semun {
 	struct seminfo *__buf;
 };
 
+// A node struct
 struct node {
 	int request;
 	struct node *next;

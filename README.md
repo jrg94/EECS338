@@ -16,3 +16,12 @@ HOW TO RUN:
 	2. If the integer is within the range of test functions
 	   the program will execute
 	3. Otherwise, try a different integer
+
+NOTES:
+	Unfortunately, this solution is not complete. Linked Lists are
+	proving to be incredibly difficult to work with in shared memory.
+	It seems that malloc does not play nice with shared memory due
+	to the local heap address used when allocating the memory. As a
+	result, this solution can end up with the case where a withdraw
+	waits for any deposit before continuing. Of course, this means
+	that withdraws can cause the balance to go negative.
