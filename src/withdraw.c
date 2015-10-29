@@ -18,7 +18,7 @@ void withdraw(int request) {
 
 	// if (wcount = 0 and balance > withdraw)
 	if (shared_variables->wcount == 0 && shared_variables->balance >= request) {
-		//	{balance = balance - withdraw; signal(mutex)}
+		// {balance = balance - withdraw; signal(mutex)}
 		printf("PID: %d - A withdrawal of $%d was made!\n", getpid(), request);
 		shared_variables->balance = shared_variables->balance - request;
 		
@@ -28,11 +28,12 @@ void withdraw(int request) {
 	} else {
 		// wcount = wcount + 1;
 		shared_variables->wcount = shared_variables->wcount + 1;
-		printf("WE ARE HERE\n");
+
 		// AddEndOfList(LIST, withdraw);
+		printf("PID: %d - Withdrawer:%d is added to queue.\n", getpid(), request);
 		insertLast(shared_variables->list, request);
-		printf("Now we here\n");
-		if (shared_variables->list == NULL) {
+
+		if (shared_variables->list->head == NULL) {
 			printf("Totally null\n");
 		}
 		

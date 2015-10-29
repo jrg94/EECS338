@@ -11,7 +11,6 @@ void deposit(int deposit) {
 	int semid = get_semid((key_t)SEMAPHORE_KEY);
 	int shmid = get_shmid((key_t)SEMAPHORE_KEY);
 	struct shared_variable_struct *shared_variables = shmat(shmid, 0, 0);
-//	shared_variables->list = shmat(shmget((key_t)SEMAPHORE_KEY, 100 * sizeof(struct node), IPC_CREAT | 0666), 0, 0);
 
 	// wait(mutex)
 	printf("PID: %d - Depositer:%d is waiting on mutex.\n", getpid(), deposit);
@@ -20,7 +19,7 @@ void deposit(int deposit) {
 
 	// balance = balance + deposit
 	shared_variables->balance = shared_variables->balance + deposit;
-	
+	printf ("wcount = %d\n", shared_variables->wcount);	
 	// if (wcount = 0) signal(mutex)
 	if (shared_variables->wcount == 0) {
 		printf("PID: %d - Depositer:%d is signaling mutex\n", getpid(), deposit);

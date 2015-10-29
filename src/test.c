@@ -23,7 +23,7 @@ void test(int test) {
 			test2();
 			break;
 		default:
-			perror("Failed to choose a valid test");
+			printf("Failed to choose a valid test\n");
 			exit(EXIT_FAILURE);
 	}
 }

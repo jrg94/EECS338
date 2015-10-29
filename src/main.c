@@ -7,7 +7,7 @@
 int main(int argc, char *argv[]) {
 
 	if (argc < 2) {
-		perror("Main requires two inputes");
+		printf("Main requires two inputs\n");
 		exit(EXIT_FAILURE);
 	}
 	
@@ -36,7 +36,8 @@ int main(int argc, char *argv[]) {
 	shared_variables->balance = 500;
 	shared_variables->list = malloc(sizeof(struct linked_list));
 	shared_variables->list->head = NULL;
-	
+
+	// Run code	
 	int intvar;
 	sscanf(argv[1], "%i", &intvar);
 	test(intvar);
