@@ -1,5 +1,9 @@
 /**
  * Author: Jeremy Griffith
+ *
+ * This file is responsible for handling
+ * all process functions such as semaphore
+ * and shared memory functions
  */
 
 #include "as4.h"

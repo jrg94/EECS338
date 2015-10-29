@@ -1,19 +1,31 @@
 /**
  * Author: Jeremy Griffith
+ * 
+ * This file holds the test suite to test the functionality
+ * of the bank account assignment
  */
 
 #include "as4.h"
 
+// Functions
 void test1();
 void test2();
 
+/**
+ * A debug function for examining the contents
+ * of the shared memory
+ */
 void print_memory(struct shared_variable_struct *shared) {
 	printf("*** PID: %d - Shared variable status\n", getpid());
 	printf("*** balance = %d, wcount = %d\n", shared->balance, shared->wcount);
-	printf("*** list: ");
-	printList(shared->list);
+	//printf("*** list: ");
+	//printList(shared->list);
 }
 
+/**
+ * A helper function for running
+ * the test suite
+ */
 void test(int test) {
 	switch (test) {
 		case 1:

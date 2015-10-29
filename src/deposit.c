@@ -1,9 +1,15 @@
 /**
  * Author: Jeremy Griffith
+ * 
+ * This file is responsible for modeling
+ * a deposit process for a bank account
  */
 
 #include "as4.h"
 
+/**
+ * Acts as a deposit process
+ */
 void deposit(int deposit) {
 	printf("PID: %d - Someone wants to deposit $%d!\n", getpid(), deposit);
 

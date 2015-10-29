@@ -1,10 +1,16 @@
 /**
  * Author: Jeremy Griffith
+ *
+ * This file models a withdraw process
+ * for a bank account
  */
 
 #include "as4.h"
 #include <errno.h>
 
+/**
+ * Acts as a withdraw process
+ */
 void withdraw(int request) {
 
 	int semid = get_semid((key_t)SEMAPHORE_KEY);

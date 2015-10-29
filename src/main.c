@@ -1,9 +1,17 @@
 /**
  * Author: Jeremy Griffith
+ * 
+ * This file holds the main function of which
+ * the program is executed
  */
 
 #include "as4.h"
 
+/**
+ * main is expecting an integer on the command line
+ * This integer acts as a tool for calling separate
+ * test functions
+ */
 int main(int argc, char *argv[]) {
 
 	if (argc < 2) {
