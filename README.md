@@ -17,6 +17,12 @@ HOW TO RUN:
 	   the program will execute
 	3. Otherwise, try a different integer
 
+TESTING:
+	The following tests exist in the testing directory:
+	1. All legal transactions
+	2. One illegal withdrawal followed by a compensating deposit
+	3. One illegal withdrawal followed by an inadequate deposit
+
 NOTES:
 	Unfortunately, this solution is not complete. Linked Lists are
 	proving to be incredibly difficult to work with in shared memory.

@@ -1,0 +1,75 @@
+PID: 4283 - Someone is waiting on mutex to withdraw $600.
+PID: 4283 - Withdrawer:600 has passed mutex.
+PID: 4283 - Withdrawer:600 is added to queue.
+PID: 4283 - Withdrawer:600 is signaling mutex.
+*** PID: 4283 - Shared variable status
+*** balance = 500, wcount = 1
+PID: 4283 - Withdrawer is waiting to withdraw.
+PID: 4283 - Withdrawer is now ready to withdraw.
+PID: 4283 - Withdrawer is signaling mutex.
+*** PID: 4283 - Shared variable status
+*** balance = 600, wcount = 0
+PID: 4284 - Someone wants to deposit $700!
+PID: 4284 - Depositer:700 is waiting on mutex.
+PID: 4284 - Depositer:700 has passed mutex.
+wcount = 1
+Failed to get request amount from head because head is null.
+PID: 4284 - Depositer is signaling the wait list
+*** PID: 4284 - Shared variable status
+*** balance = 1200, wcount = 1
+PID: 4285 - Someone wants to deposit $700!
+PID: 4285 - Depositer:700 is waiting on mutex.
+PID: 4285 - Depositer:700 has passed mutex.
+wcount = 0
+PID: 4285 - Depositer:700 is signaling mutex
+*** PID: 4285 - Shared variable status
+*** balance = 1300, wcount = 0
+PID: 4286 - Someone wants to deposit $700!
+PID: 4286 - Depositer:700 is waiting on mutex.
+PID: 4286 - Depositer:700 has passed mutex.
+wcount = 0
+PID: 4286 - Depositer:700 is signaling mutex
+*** PID: 4286 - Shared variable status
+*** balance = 2000, wcount = 0
+PID: 4287 - Someone wants to deposit $700!
+PID: 4287 - Depositer:700 is waiting on mutex.
+PID: 4287 - Depositer:700 has passed mutex.
+wcount = 0
+PID: 4287 - Depositer:700 is signaling mutex
+*** PID: 4287 - Shared variable status
+*** balance = 2700, wcount = 0
+PID: 4288 - Someone wants to deposit $700!
+PID: 4288 - Depositer:700 is waiting on mutex.
+PID: 4288 - Depositer:700 has passed mutex.
+wcount = 0
+PID: 4288 - Depositer:700 is signaling mutex
+*** PID: 4288 - Shared variable status
+*** balance = 3400, wcount = 0
+PID: 4289 - Someone wants to deposit $700!
+PID: 4289 - Depositer:700 is waiting on mutex.
+PID: 4289 - Depositer:700 has passed mutex.
+wcount = 0
+PID: 4289 - Depositer:700 is signaling mutex
+*** PID: 4289 - Shared variable status
+*** balance = 4100, wcount = 0
+PID: 4290 - Someone wants to deposit $700!
+PID: 4290 - Depositer:700 is waiting on mutex.
+PID: 4290 - Depositer:700 has passed mutex.
+wcount = 0
+PID: 4290 - Depositer:700 is signaling mutex
+*** PID: 4290 - Shared variable status
+*** balance = 4800, wcount = 0
+PID: 4291 - Someone wants to deposit $700!
+PID: 4291 - Depositer:700 is waiting on mutex.
+PID: 4291 - Depositer:700 has passed mutex.
+wcount = 0
+PID: 4291 - Depositer:700 is signaling mutex
+*** PID: 4291 - Shared variable status
+*** balance = 5500, wcount = 0
+PID: 4292 - Someone wants to deposit $700!
+PID: 4292 - Depositer:700 is waiting on mutex.
+PID: 4292 - Depositer:700 has passed mutex.
+wcount = 0
+PID: 4292 - Depositer:700 is signaling mutex
+*** PID: 4292 - Shared variable status
+*** balance = 6200, wcount = 0
