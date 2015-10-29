@@ -4,11 +4,28 @@
 
 #include "as4.h"
 
+void test1();
+void test2();
+
 void print_memory(struct shared_variable_struct *shared) {
 	printf("*** PID: %d - Shared variable status\n", getpid());
 	printf("*** balance = %d, wcount = %d\n", shared->balance, shared->wcount);
 	printf("*** list: ");
 	printList(shared->list);
+}
+
+void test(int test) {
+	switch (test) {
+		case 1:
+			test1();
+			break;
+		case 2:
+			test2();
+			break;
+		default:
+			perror("Failed to choose a valid test");
+			exit(EXIT_FAILURE);
+	}
 }
 
 /**
@@ -41,6 +58,7 @@ void test2() {
 	process_fork(WITHDRAW, 200);
 	sleep(STALL_TIME);
 
+	wait(NULL);
 	wait(NULL);
 	wait(NULL);
 }

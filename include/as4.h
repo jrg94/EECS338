@@ -33,7 +33,11 @@ int get_shmid(key_t shmkey);
 struct shared_variable_struct {
 	int wcount;
 	int balance;
-	struct node *list;
+	struct linked_list *list;
+};
+
+struct linked_list {
+	struct node *head;
 };
 
 union semun {

@@ -10,7 +10,6 @@ void withdraw(int request) {
 	int semid = get_semid((key_t)SEMAPHORE_KEY);
 	int shmid = get_shmid((key_t)SEMAPHORE_KEY);
 	struct shared_variable_struct *shared_variables = shmat(shmid, 0, 0);
-	shared_variables->list = shmat(shmget((key_t)SEMAPHORE_KEY+1, sizeof(struct node), IPC_CREAT | 0666), 0, 0);
 
 	// wait(mutex)
 	printf("PID: %d - Someone is waiting on mutex to withdraw $%d.\n", getpid(), request);
@@ -29,9 +28,10 @@ void withdraw(int request) {
 	} else {
 		// wcount = wcount + 1;
 		shared_variables->wcount = shared_variables->wcount + 1;
-		
+		printf("WE ARE HERE\n");
 		// AddEndOfList(LIST, withdraw);
-		insertLast(&shared_variables->list, request);
+		insertLast(shared_variables->list, request);
+		printf("Now we here\n");
 		if (shared_variables->list == NULL) {
 			printf("Totally null\n");
 		}
@@ -48,7 +48,7 @@ void withdraw(int request) {
 
 		// balance = balance - FirstRequestAmount(LIST);
 		shared_variables->balance = shared_variables->balance - getFirstRequestAmount(shared_variables->list);
-		printf("%d\n", shared_variables->balance);
+		//printf("%d\n", shared_variables->balance);
 		// DeleteFirstRequest(LIST);
 		removeFirst(shared_variables->list);
 

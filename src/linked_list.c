@@ -7,16 +7,10 @@
 /**
  * An insertion function for linked lists
  */
-void insertLast(struct node **head, int request) {
-	int shmid;
-		
-	// Generates a new node pointer
+void insertLast(struct linked_list *list, int request) {
 	
-	if ((shmid = shmget((key_t)SEMAPHORE_KEY + 1, sizeof(struct node), 0666 | IPC_CREAT)) < 0) {
-		perror("shmget");
-		exit(EXIT_FAILURE);
-	}
-	struct node *insertNode = shmat(shmid, 0,0); //(struct node*)malloc(sizeof(struct node));
+	// Generates a new node pointer
+	struct node *insertNode = (struct node*)malloc(sizeof(struct node));
 
 	// Tests the pointer for null
 	if (insertNode == NULL) {
@@ -29,14 +23,12 @@ void insertLast(struct node **head, int request) {
 	insertNode->next = NULL;
 
 	// Handles first insert case
-	if ((*head)->next == NULL) {
-		(*head)->request = request;
-		(*head)->next = NULL;
-	//	printf("%d\n", head->request);
+	if (list->head == NULL) {
+		list->head = insertNode;
 	}
 	else {
 
-		struct node * current = *head;
+		struct node * current = list->head;
 		while (current->next != NULL) {
 			current = current->next;
 		}
@@ -47,24 +39,25 @@ void insertLast(struct node **head, int request) {
 /**
  * Removes the first node from the list
  */
-void removeFirst(struct node *head) {
-	struct node *newHead = head->next;
-//	free(head);
-	head = newHead;
+void removeFirst(struct linked_list *list) {
+	
+	struct node *newHead = list->head->next;
+	free(list->head);
+	list->head = newHead;
 }
 
-int getFirstRequestAmount(struct node *head) {
+int getFirstRequestAmount(struct linked_list *list) {
 
-	if (head == NULL) {
+	if (list->head == NULL) {
 		printf("Failed to get request amount from head because head is null.\n");
 		exit(EXIT_SUCCESS);
 	}
 
-	return head->request;
+	return list->head->request;
 }
 
-void printList(struct node *head) {
-	struct node *temp = head;
+void printList(struct linked_list *list) {
+	struct node *temp = list->head;
 //	if (temp == NULL) { printf("head is null\n"); }
 	while (temp != NULL) {
 		printf("%d -> ", temp->request);

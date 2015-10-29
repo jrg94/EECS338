@@ -5,6 +5,11 @@
 #include "as4.h"
 
 int main(int argc, char *argv[]) {
+
+	if (argc < 2) {
+		perror("Main requires two inputes");
+		exit(EXIT_FAILURE);
+	}
 	
 	// Begin creation of semaphores
 	union semun semaphore_values;
@@ -29,9 +34,12 @@ int main(int argc, char *argv[]) {
 	// Initialize Shared Memory
 	shared_variables->wcount = 0;
 	shared_variables->balance = 500;
-	shared_variables->list = NULL;//shmat(shmget((key_t)SEMAPHORE_KEY+1, sizeof(struct node), IPC_CREAT | 0666), 0, 0);
+	shared_variables->list = malloc(sizeof(struct linked_list));
+	shared_variables->list->head = NULL;
 	
-	test1();
+	int intvar;
+	sscanf(argv[1], "%i", &intvar);
+	test(intvar);
 
 	// Clean up
 	if (shmdt(shared_variables) == -1) {
