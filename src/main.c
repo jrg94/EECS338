@@ -29,18 +29,9 @@ int main(int argc, char *argv[]) {
 	// Initialize Shared Memory
 	shared_variables->wcount = 0;
 	shared_variables->balance = 500;
-	shared_variables->list = NULL;
-
-	process_fork(DEPOSIT, 100);
-	sleep(STALL_TIME);
-	process_fork(DEPOSIT, 200);
-	sleep(STALL_TIME);
-	process_fork(WITHDRAW, 500);
-	sleep(STALL_TIME);
-
-	wait(NULL);
-	wait(NULL);
-	wait(NULL);
+	shared_variables->list = NULL;//shmat(shmget((key_t)SEMAPHORE_KEY+1, sizeof(struct node), IPC_CREAT | 0666), 0, 0);
+	
+	test1();
 
 	// Clean up
 	if (shmdt(shared_variables) == -1) {

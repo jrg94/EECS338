@@ -3,12 +3,14 @@
  */
 
 #include "as4.h"
+#include <errno.h>
 
 void withdraw(int request) {
 
 	int semid = get_semid((key_t)SEMAPHORE_KEY);
 	int shmid = get_shmid((key_t)SEMAPHORE_KEY);
 	struct shared_variable_struct *shared_variables = shmat(shmid, 0, 0);
+	shared_variables->list = shmat(shmget((key_t)SEMAPHORE_KEY+1, sizeof(struct node), IPC_CREAT | 0666), 0, 0);
 
 	// wait(mutex)
 	printf("PID: %d - Someone is waiting on mutex to withdraw $%d.\n", getpid(), request);
@@ -24,44 +26,47 @@ void withdraw(int request) {
 		printf("PID: %d - Withdrawer:%d is signaling mutex.\n", getpid(), request);
 		print_memory(shared_variables);
 		semaphore_signal(semid, SEMAPHORE_MUTEX);	
-	}	
-	
-	// else {
-	else {
+	} else {
 		// wcount = wcount + 1;
 		shared_variables->wcount = shared_variables->wcount + 1;
 		
 		// AddEndOfList(LIST, withdraw);
-		insertLast(shared_variables->list, request);
-
-		//	signal(mutex);
+		insertLast(&shared_variables->list, request);
+		if (shared_variables->list == NULL) {
+			printf("Totally null\n");
+		}
+		
+		// signal(mutex);
 		printf("PID: %d - Withdrawer:%d is signaling mutex.\n", getpid(),request);
 		semaphore_signal(semid, SEMAPHORE_MUTEX);
+		print_memory(shared_variables);
 	
-		//	wait(wlist);
+		// wait(wlist);
 		printf("PID: %d - Withdrawer is waiting to withdraw.\n", getpid());
 		semaphore_wait(semid, SEMAPHORE_WLIST);
 		printf("PID: %d - Withdrawer is now ready to withdraw.\n", getpid());
 
-		//	balance = balance - FirstRequestAmount(LIST);
+		// balance = balance - FirstRequestAmount(LIST);
 		shared_variables->balance = shared_variables->balance - getFirstRequestAmount(shared_variables->list);
-
-		// 	DeleteFirstRequest(LIST);
+		printf("%d\n", shared_variables->balance);
+		// DeleteFirstRequest(LIST);
 		removeFirst(shared_variables->list);
 
-		// 	wcount = wcount - 1;
-		shared_variables->wcount = shared_variables->wcount + 1;		
+		// wcount = wcount - 1;
+		shared_variables->wcount = shared_variables->wcount - 1;		
 
-		//	if (wcount > 1 and (FirstRequestAmount(LIST)) < balance)) signal(wlist)
+		// if (wcount > 1 and (FirstRequestAmount(LIST)) < balance)) signal(wlist)
 		if (shared_variables->wcount > 0 && getFirstRequestAmount(shared_variables->list) < shared_variables->balance) {
 	
 			printf("PID: %d - Withdrawer is signaling the next withdrawer.\n", getpid());
+			print_memory(shared_variables);
 			semaphore_signal(semid, SEMAPHORE_WLIST);		
 		}		
 
 		//	else signal(mutex)}
 		else {
 			printf("PID: %d - Withdrawer is signaling mutex.\n", getpid());
+			print_memory(shared_variables);
 			semaphore_signal(semid, SEMAPHORE_MUTEX);
 		}
 	}
@@ -70,6 +75,5 @@ void withdraw(int request) {
 		perror("shmdt failed during a withdraw");
 		exit(EXIT_FAILURE);
 	}
-
 	exit(EXIT_SUCCESS);
 }
