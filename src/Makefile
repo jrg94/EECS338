@@ -2,7 +2,7 @@
 
 IDIR = ../include
 CC = gcc
-CFLAGS = -I$(IDIR)
+CFLAGS = -I$(IDIR) -pthread
 ODIR = obj
 
 # Contains the list of header files
@@ -10,7 +10,7 @@ _DEPS = as5.h
 DEPS = $(patsubst %, $(IDIR)/%, $(_DEPS))
 
 # Contains the list of object files to be linked
-_OBJ = main.o
+_OBJ = main.o funcs.o
 OBJ = $(patsubst %, $(ODIR)/%, $(_OBJ))
 
 # If any of the .c files or .h files change, run this section
