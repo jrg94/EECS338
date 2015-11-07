@@ -9,24 +9,33 @@ const unsigned int RAND_RANGE = RAND_MAX>>10;
 extern int readcount;
 extern sem_t mutex, wrt;
 
+void easy_print(int tid, char* message) {
+	printf("Thread: %d - %s\n", tid, message);
+}
+
 void *reader(void *arg) {
 	thread_data_t *data = (thread_data_t *)arg;
+	easy_print(data->tid, "~~NEW READER~~");
 
 	// Wait(mutex)
+	easy_print(data->tid, "Reader is waiting on mutex"); 
 	semwait(&mutex);
 	readcount = readcount + 1;
 
-	printf("Thread: %d - A new reader! (incremented readcount to %d)\n", data->tid, readcount);
+	printf("Thread: %d - Reader incremented readcount to %d\n", data->tid, readcount);
 
 	if (readcount == 1) {
-		printf("Thread: %d - Reader waits on wrt\n", data->tid);
+		easy_print(data->tid, "Reader waits on wrt");
 		semwait(&wrt);
 	}
+	printf("Thread: %d - Reader signals mutex\n", data->tid);
+	semsignal(&mutex);
 	
 	// Critical Section
 	printf("Thread: %d - Reader enters critical section (reading)\n", data->tid);
 
 	// Wait(mutex)
+	printf("Thread: %d - Reader waits on mutex\n", data->tid);
 	semwait(&mutex);
 	readcount = readcount - 1;
 	printf("Thread: %d - Reader finished (decremented readcount to %d)\n", data->tid, readcount);
@@ -37,18 +46,21 @@ void *reader(void *arg) {
 	}
 
 	// Signal(mutex)
+	printf("Thread: %d - Reader signals mutex\n", data->tid);
 	semsignal(&mutex);
 }
 
 void *writer(void *arg) {
 	thread_data_t *data = (thread_data_t *)arg;
 
-	printf("Thread: %d - A new writer!", data->tid);
+	printf("Thread: %d - ~~NEW WRITER~~\n", data->tid);
 
+	printf("Thread: %d - Writer is waiting on wrt\n", data->tid);
 	semwait(&wrt);
 
 	printf("Thread: %d - Writer enters critical section (writing)\n", data->tid);
 
+	printf("Thread: %d - Writer signals wrt", data->tid);
 	semsignal(&wrt);
 }
 
