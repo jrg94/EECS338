@@ -53,7 +53,7 @@ int main(int argc, char* argv[]) {
 			return EXIT_FAILURE;
 		}
 	}
-	sleep(1);
+	sleep(12);
 	printf("*** LAST THREAD INCOMING (%d) ***\n", NUM_OF_THREADS+1);
 	fflush(stdout);
 	sleep(1);

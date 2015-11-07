@@ -18,6 +18,22 @@ void easy_print(int tid, char* message) {
 }
 
 /**
+ * A convenience function for stalling a
+ * thread
+ */
+void thread_rest() {
+	struct timespec time = 
+	{
+		0,
+		100000000L
+	};
+
+	if (nanosleep(&time, NULL) < 0) {
+		fprintf(stderr, "nanosleep failed in thread_rest\n");
+	}
+}
+
+/**
  * A function which serves as a reader thread
  */
 void *reader(void *arg) {
@@ -40,6 +56,7 @@ void *reader(void *arg) {
 	
 	// Critical Section
 	easy_print(data->tid, "Reader enters critical section");
+	thread_rest();
 
 	// Wait(mutex)
 	easy_print(data->tid, "Reader waits on mutex");
@@ -72,6 +89,7 @@ void *writer(void *arg) {
 
 	// Critical Section
 	easy_print(data->tid, "Writer enters critical section");
+	thread_rest();
 
 	// Signal wrt
 	easy_print(data->tid, "Writer signals wrt");
