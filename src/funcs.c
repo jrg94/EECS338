@@ -9,10 +9,17 @@ const unsigned int RAND_RANGE = RAND_MAX>>10;
 extern int readcount;
 extern sem_t mutex, wrt;
 
+/**
+ * A convenience function for printing messages
+ * about each thread
+ */
 void easy_print(int tid, char* message) {
 	printf("Thread: %d - %s\n", tid, message);
 }
 
+/**
+ * A function which serves as a reader thread
+ */
 void *reader(void *arg) {
 	thread_data_t *data = (thread_data_t *)arg;
 	easy_print(data->tid, "~~NEW READER~~");
@@ -28,39 +35,46 @@ void *reader(void *arg) {
 		easy_print(data->tid, "Reader waits on wrt");
 		semwait(&wrt);
 	}
-	printf("Thread: %d - Reader signals mutex\n", data->tid);
+	easy_print(data->tid, "Reader signals mutex");
 	semsignal(&mutex);
 	
 	// Critical Section
-	printf("Thread: %d - Reader enters critical section (reading)\n", data->tid);
+	easy_print(data->tid, "Reader enters critical section");
 
 	// Wait(mutex)
-	printf("Thread: %d - Reader waits on mutex\n", data->tid);
+	easy_print(data->tid, "Reader waits on mutex");
 	semwait(&mutex);
+
 	readcount = readcount - 1;
 	printf("Thread: %d - Reader finished (decremented readcount to %d)\n", data->tid, readcount);
 	
 	if (readcount == 0) {
-		printf("Thread: %d - Reader signals wrt\n", data->tid);
+		easy_print(data->tid, "Reader signals wrt");
 		semsignal(&wrt);
 	}
 
 	// Signal(mutex)
-	printf("Thread: %d - Reader signals mutex\n", data->tid);
+	easy_print(data->tid, "Reader signals mutex");
 	semsignal(&mutex);
 }
 
+/**
+ * A function which serves as a writer thread
+ */
 void *writer(void *arg) {
 	thread_data_t *data = (thread_data_t *)arg;
 
-	printf("Thread: %d - ~~NEW WRITER~~\n", data->tid);
+	easy_print(data->tid, "~~NEW WRITER~~");
 
-	printf("Thread: %d - Writer is waiting on wrt\n", data->tid);
+	// Wait on wrt
+	easy_print(data->tid, "Writer is waiting on wrt");
 	semwait(&wrt);
 
-	printf("Thread: %d - Writer enters critical section (writing)\n", data->tid);
+	// Critical Section
+	easy_print(data->tid, "Writer enters critical section");
 
-	printf("Thread: %d - Writer signals wrt", data->tid);
+	// Signal wrt
+	easy_print(data->tid, "Writer signals wrt");
 	semsignal(&wrt);
 }
 

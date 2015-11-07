@@ -54,7 +54,7 @@ int main(int argc, char* argv[]) {
 		}
 	}
 	sleep(1);
-	printf("*** LAST THREAD (%d) ***\n", NUM_OF_THREADS+1);
+	printf("*** LAST THREAD INCOMING (%d) ***\n", NUM_OF_THREADS+1);
 	fflush(stdout);
 	sleep(1);
 	printf(".");
@@ -70,17 +70,20 @@ int main(int argc, char* argv[]) {
 	pthread_t finalThread;
 	thread_data_t fTData = { NUM_OF_THREADS + 1 };
 
+	// Creates the final thread
 	if ((errorCheck = pthread_create(&finalThread, NULL, writer, &fTData))) {
 		fprintf(stderr, "pthread_create failed in main, %d\n", errorCheck);
 		return EXIT_FAILURE;
 	}
 
+	// Waits until all threads terminate
 	for (i = 0; i < NUM_OF_THREADS; i++) {
 		if ((errorCheck = pthread_join(threads[i], NULL))) {
 			fprintf(stderr, "pthread_join failed in man, %d\n", errorCheck);
 		}
 	}
 
+	// Waits until the final thread terminates
 	if ((errorCheck = pthread_join(finalThread, NULL))) {
 		fprintf(stderr, "pthread_join failed, %d\n", errorCheck);
 	}
