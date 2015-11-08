@@ -1,0 +1,1224 @@
+Thread: 6 - ~~NEW WRITER~~ @ 
+Thread: 6 - Writer is waiting on wrt
+Thread: 6 - Writer enters critical section
+Thread: 7 - ~~NEW WRITER~~ @ 1446998632.242312
+Thread: 7 - Writer is waiting on wrt
+Thread: 8 - ~~NEW WRITER~~ @ 1446998632.242317
+Thread: 8 - Writer is waiting on wrt
+Thread: 9 - ~~NEW WRITER~~ @ 1446998632.242320
+Thread: 9 - Writer is waiting on wrt
+Thread: 5 - ~~NEW WRITER~~ @ 1446998632.242322
+Thread: 5 - Writer is waiting on wrt
+Thread: 10 - ~~NEW WRITER~~ @ 1446998632.242326
+Thread: 10 - Writer is waiting on wrt
+Thread: 11 - ~~NEW READER~~ @ 1446998632.242328
+Thread: 11 - Reader is waiting on mutex
+Thread: 11 - Reader incremented readcount to 1
+Thread: 11 - Reader waits on wrt
+Thread: 12 - ~~NEW WRITER~~ @ 1446998632.242331
+Thread: 12 - Writer is waiting on wrt
+Thread: 13 - ~~NEW READER~~ @ 1446998632.242334
+Thread: 13 - Reader is waiting on mutex
+Thread: 14 - ~~NEW WRITER~~ @ 1446998632.242347
+Thread: 14 - Writer is waiting on wrt
+Thread: 15 - ~~NEW WRITER~~ @ 1446998632.242350
+Thread: 15 - Writer is waiting on wrt
+Thread: 4 - ~~NEW WRITER~~ @ 1446998632.242353
+Thread: 4 - Writer is waiting on wrt
+Thread: 16 - ~~NEW WRITER~~ @ 1446998632.242356
+Thread: 16 - Writer is waiting on wrt
+Thread: 17 - ~~NEW WRITER~~ @ 1446998632.242358
+Thread: 17 - Writer is waiting on wrt
+Thread: 18 - ~~NEW READER~~ @ 1446998632.242361
+Thread: 18 - Reader is waiting on mutex
+Thread: 19 - ~~NEW WRITER~~ @ 1446998632.242364
+Thread: 19 - Writer is waiting on wrt
+Thread: 20 - ~~NEW READER~~ @ 1446998632.242367
+Thread: 20 - Reader is waiting on mutex
+Thread: 21 - ~~NEW WRITER~~ @ 1446998632.242370
+Thread: 21 - Writer is waiting on wrt
+Thread: 22 - ~~NEW WRITER~~ @ 1446998632.242373
+Thread: 22 - Writer is waiting on wrt
+Thread: 23 - ~~NEW WRITER~~ @ 1446998632.242376
+Thread: 23 - Writer is waiting on wrt
+Thread: 3 - ~~NEW READER~~ @ 1446998632.242379
+Thread: 3 - Reader is waiting on mutex
+Thread: 24 - ~~NEW WRITER~~ @ 1446998632.242382
+Thread: 24 - Writer is waiting on wrt
+Thread: 25 - ~~NEW WRITER~~ @ 1446998632.242384
+Thread: 25 - Writer is waiting on wrt
+Thread: 26 - ~~NEW READER~~ @ 1446998632.242387
+Thread: 26 - Reader is waiting on mutex
+Thread: 27 - ~~NEW WRITER~~ @ 1446998632.242389
+Thread: 27 - Writer is waiting on wrt
+Thread: 28 - ~~NEW WRITER~~ @ 1446998632.242392
+Thread: 28 - Writer is waiting on wrt
+Thread: 29 - ~~NEW WRITER~~ @ 1446998632.242395
+Thread: 29 - Writer is waiting on wrt
+Thread: 30 - ~~NEW WRITER~~ @ 1446998632.242398
+Thread: 30 - Writer is waiting on wrt
+Thread: 31 - ~~NEW WRITER~~ @ 1446998632.242400
+Thread: 31 - Writer is waiting on wrt
+Thread: 32 - ~~NEW READER~~ @ 1446998632.242403
+Thread: 32 - Reader is waiting on mutex
+Thread: 33 - ~~NEW READER~~ @ 1446998632.242407
+Thread: 33 - Reader is waiting on mutex
+Thread: 34 - ~~NEW READER~~ @ 1446998632.242410
+Thread: 34 - Reader is waiting on mutex
+Thread: 35 - ~~NEW WRITER~~ @ 1446998632.242412
+Thread: 35 - Writer is waiting on wrt
+Thread: 36 - ~~NEW READER~~ @ 1446998632.242415
+Thread: 36 - Reader is waiting on mutex
+Thread: 37 - ~~NEW READER~~ @ 1446998632.242417
+Thread: 37 - Reader is waiting on mutex
+Thread: 2 - ~~NEW WRITER~~ @ 1446998632.242420
+Thread: 2 - Writer is waiting on wrt
+Thread: 38 - ~~NEW READER~~ @ 1446998632.242422
+Thread: 38 - Reader is waiting on mutex
+Thread: 39 - ~~NEW READER~~ @ 1446998632.242434
+Thread: 39 - Reader is waiting on mutex
+Thread: 40 - ~~NEW WRITER~~ @ 1446998632.242437
+Thread: 40 - Writer is waiting on wrt
+Thread: 41 - ~~NEW READER~~ @ 1446998632.242440
+Thread: 41 - Reader is waiting on mutex
+Thread: 62 - ~~NEW READER~~ @ 1446998632.242443
+Thread: 62 - Reader is waiting on mutex
+Thread: 57 - ~~NEW READER~~ @ 1446998632.242446
+Thread: 57 - Reader is waiting on mutex
+Thread: 43 - ~~NEW WRITER~~ @ 1446998632.242449
+Thread: 43 - Writer is waiting on wrt
+Thread: 50 - ~~NEW READER~~ @ 1446998632.242466
+Thread: 50 - Reader is waiting on mutex
+Thread: 51 - ~~NEW READER~~ @ 1446998632.242470
+Thread: 51 - Reader is waiting on mutex
+Thread: 56 - ~~NEW WRITER~~ @ 1446998632.242474
+Thread: 56 - Writer is waiting on wrt
+Thread: 44 - ~~NEW READER~~ @ 1446998632.242477
+Thread: 44 - Reader is waiting on mutex
+Thread: 45 - ~~NEW READER~~ @ 1446998632.242480
+Thread: 45 - Reader is waiting on mutex
+Thread: 46 - ~~NEW READER~~ @ 1446998632.242483
+Thread: 46 - Reader is waiting on mutex
+Thread: 49 - ~~NEW READER~~ @ 1446998632.242486
+Thread: 49 - Reader is waiting on mutex
+Thread: 52 - ~~NEW WRITER~~ @ 1446998632.242488
+Thread: 52 - Writer is waiting on wrt
+Thread: 54 - ~~NEW READER~~ @ 1446998632.242491
+Thread: 54 - Reader is waiting on mutex
+Thread: 55 - ~~NEW WRITER~~ @ 1446998632.242493
+Thread: 55 - Writer is waiting on wrt
+Thread: 61 - ~~NEW READER~~ @ 1446998632.242496
+Thread: 61 - Reader is waiting on mutex
+Thread: 42 - ~~NEW READER~~ @ 1446998632.242499
+Thread: 42 - Reader is waiting on mutex
+Thread: 47 - ~~NEW READER~~ @ 1446998632.242502
+Thread: 47 - Reader is waiting on mutex
+Thread: 48 - ~~NEW READER~~ @ 1446998632.242506
+Thread: 48 - Reader is waiting on mutex
+Thread: 53 - ~~NEW WRITER~~ @ 1446998632.242509
+Thread: 53 - Writer is waiting on wrt
+Thread: 58 - ~~NEW READER~~ @ 1446998632.242511
+Thread: 58 - Reader is waiting on mutex
+Thread: 59 - ~~NEW READER~~ @ 1446998632.242514
+Thread: 59 - Reader is waiting on mutex
+Thread: 60 - ~~NEW READER~~ @ 1446998632.242516
+Thread: 60 - Reader is waiting on mutex
+Thread: 63 - ~~NEW READER~~ @ 1446998632.242519
+Thread: 63 - Reader is waiting on mutex
+Thread: 64 - ~~NEW WRITER~~ @ 1446998632.242521
+Thread: 64 - Writer is waiting on wrt
+Thread: 65 - ~~NEW READER~~ @ 1446998632.242524
+Thread: 65 - Reader is waiting on mutex
+Thread: 66 - ~~NEW READER~~ @ 1446998632.242527
+Thread: 66 - Reader is waiting on mutex
+Thread: 67 - ~~NEW WRITER~~ @ 1446998632.242530
+Thread: 67 - Writer is waiting on wrt
+Thread: 68 - ~~NEW WRITER~~ @ 1446998632.242532
+Thread: 68 - Writer is waiting on wrt
+Thread: 69 - ~~NEW WRITER~~ @ 1446998632.242535
+Thread: 69 - Writer is waiting on wrt
+Thread: 70 - ~~NEW READER~~ @ 1446998632.242538
+Thread: 70 - Reader is waiting on mutex
+Thread: 71 - ~~NEW READER~~ @ 1446998632.242541
+Thread: 71 - Reader is waiting on mutex
+Thread: 72 - ~~NEW READER~~ @ 1446998632.242544
+Thread: 72 - Reader is waiting on mutex
+Thread: 73 - ~~NEW READER~~ @ 1446998632.242546
+Thread: 73 - Reader is waiting on mutex
+Thread: 74 - ~~NEW WRITER~~ @ 1446998632.242548
+Thread: 74 - Writer is waiting on wrt
+Thread: 75 - ~~NEW READER~~ @ 1446998632.242560
+Thread: 75 - Reader is waiting on mutex
+Thread: 76 - ~~NEW WRITER~~ @ 1446998632.242564
+Thread: 76 - Writer is waiting on wrt
+Thread: 77 - ~~NEW READER~~ @ 1446998632.242574
+Thread: 77 - Reader is waiting on mutex
+Thread: 78 - ~~NEW WRITER~~ @ 1446998632.242576
+Thread: 78 - Writer is waiting on wrt
+Thread: 79 - ~~NEW WRITER~~ @ 1446998632.242579
+Thread: 79 - Writer is waiting on wrt
+Thread: 80 - ~~NEW READER~~ @ 1446998632.242581
+Thread: 80 - Reader is waiting on mutex
+Thread: 81 - ~~NEW READER~~ @ 1446998632.242584
+Thread: 81 - Reader is waiting on mutex
+Thread: 82 - ~~NEW READER~~ @ 1446998632.242586
+Thread: 82 - Reader is waiting on mutex
+Thread: 1 - ~~NEW READER~~ @ 1446998632.242589
+Thread: 1 - Reader is waiting on mutex
+Thread: 83 - ~~NEW READER~~ @ 1446998632.242592
+Thread: 83 - Reader is waiting on mutex
+Thread: 84 - ~~NEW WRITER~~ @ 1446998632.242594
+Thread: 84 - Writer is waiting on wrt
+Thread: 85 - ~~NEW READER~~ @ 1446998632.242598
+Thread: 85 - Reader is waiting on mutex
+Thread: 86 - ~~NEW READER~~ @ 1446998632.242600
+Thread: 86 - Reader is waiting on mutex
+Thread: 87 - ~~NEW WRITER~~ @ 1446998632.242602
+Thread: 87 - Writer is waiting on wrt
+Thread: 88 - ~~NEW READER~~ @ 1446998632.242604
+Thread: 88 - Reader is waiting on mutex
+Thread: 89 - ~~NEW READER~~ @ 1446998632.242607
+Thread: 89 - Reader is waiting on mutex
+Thread: 90 - ~~NEW WRITER~~ @ 1446998632.242609
+Thread: 90 - Writer is waiting on wrt
+Thread: 91 - ~~NEW WRITER~~ @ 1446998632.242611
+Thread: 91 - Writer is waiting on wrt
+Thread: 92 - ~~NEW WRITER~~ @ 1446998632.242614
+Thread: 92 - Writer is waiting on wrt
+Thread: 93 - ~~NEW READER~~ @ 1446998632.242616
+Thread: 93 - Reader is waiting on mutex
+Thread: 94 - ~~NEW READER~~ @ 1446998632.242618
+Thread: 94 - Reader is waiting on mutex
+Thread: 95 - ~~NEW READER~~ @ 1446998632.242620
+Thread: 95 - Reader is waiting on mutex
+Thread: 96 - ~~NEW READER~~ @ 1446998632.242622
+Thread: 96 - Reader is waiting on mutex
+Thread: 97 - ~~NEW WRITER~~ @ 1446998632.242624
+Thread: 97 - Writer is waiting on wrt
+Thread: 98 - ~~NEW WRITER~~ @ 1446998632.242627
+Thread: 98 - Writer is waiting on wrt
+Thread: 99 - ~~NEW READER~~ @ 1446998632.242629
+Thread: 99 - Reader is waiting on mutex
+Thread: 100 - ~~NEW READER~~ @ 1446998632.242631
+Thread: 100 - Reader is waiting on mutex
+Thread: 101 - ~~NEW WRITER~~ @ 1446998632.242634
+Thread: 101 - Writer is waiting on wrt
+Thread: 102 - ~~NEW READER~~ @ 1446998632.242637
+Thread: 102 - Reader is waiting on mutex
+Thread: 103 - ~~NEW READER~~ @ 1446998632.242640
+Thread: 103 - Reader is waiting on mutex
+Thread: 104 - ~~NEW READER~~ @ 1446998632.242642
+Thread: 104 - Reader is waiting on mutex
+Thread: 105 - ~~NEW READER~~ @ 1446998632.242645
+Thread: 105 - Reader is waiting on mutex
+Thread: 106 - ~~NEW WRITER~~ @ 1446998632.242647
+Thread: 106 - Writer is waiting on wrt
+Thread: 107 - ~~NEW READER~~ @ 1446998632.242649
+Thread: 107 - Reader is waiting on mutex
+Thread: 108 - ~~NEW READER~~ @ 1446998632.242651
+Thread: 108 - Reader is waiting on mutex
+Thread: 109 - ~~NEW WRITER~~ @ 1446998632.242654
+Thread: 109 - Writer is waiting on wrt
+Thread: 110 - ~~NEW WRITER~~ @ 1446998632.242656
+Thread: 110 - Writer is waiting on wrt
+Thread: 111 - ~~NEW WRITER~~ @ 1446998632.242658
+Thread: 111 - Writer is waiting on wrt
+Thread: 112 - ~~NEW WRITER~~ @ 1446998632.242660
+Thread: 112 - Writer is waiting on wrt
+Thread: 113 - ~~NEW WRITER~~ @ 1446998632.242663
+Thread: 113 - Writer is waiting on wrt
+Thread: 114 - ~~NEW WRITER~~ @ 1446998632.242665
+Thread: 114 - Writer is waiting on wrt
+Thread: 115 - ~~NEW WRITER~~ @ 1446998632.242667
+Thread: 115 - Writer is waiting on wrt
+Thread: 116 - ~~NEW WRITER~~ @ 1446998632.242669
+Thread: 116 - Writer is waiting on wrt
+Thread: 117 - ~~NEW WRITER~~ @ 1446998632.242671
+Thread: 117 - Writer is waiting on wrt
+Thread: 118 - ~~NEW READER~~ @ 1446998632.242674
+Thread: 118 - Reader is waiting on mutex
+Thread: 119 - ~~NEW READER~~ @ 1446998632.242676
+Thread: 119 - Reader is waiting on mutex
+Thread: 120 - ~~NEW READER~~ @ 1446998632.242678
+Thread: 120 - Reader is waiting on mutex
+Thread: 121 - ~~NEW READER~~ @ 1446998632.242680
+Thread: 121 - Reader is waiting on mutex
+Thread: 122 - ~~NEW READER~~ @ 1446998632.242682
+Thread: 122 - Reader is waiting on mutex
+Thread: 123 - ~~NEW WRITER~~ @ 1446998632.242684
+Thread: 123 - Writer is waiting on wrt
+Thread: 124 - ~~NEW READER~~ @ 1446998632.242686
+Thread: 124 - Reader is waiting on mutex
+Thread: 125 - ~~NEW READER~~ @ 1446998632.242689
+Thread: 125 - Reader is waiting on mutex
+Thread: 126 - ~~NEW WRITER~~ @ 1446998632.242712
+Thread: 126 - Writer is waiting on wrt
+Thread: 127 - ~~NEW WRITER~~ @ 1446998632.242715
+Thread: 127 - Writer is waiting on wrt
+Thread: 0 - ~~NEW READER~~ @ 1446998632.242717
+Thread: 0 - Reader is waiting on mutex
+Thread: 128 - ~~NEW WRITER~~ @ 1446998632.242720
+Thread: 128 - Writer is waiting on wrt
+Thread: 129 - ~~NEW WRITER~~ @ 1446998632.242722
+Thread: 129 - Writer is waiting on wrt
+Thread: 130 - ~~NEW WRITER~~ @ 1446998632.242725
+Thread: 130 - Writer is waiting on wrt
+Thread: 131 - ~~NEW READER~~ @ 1446998632.242727
+Thread: 131 - Reader is waiting on mutex
+Thread: 132 - ~~NEW WRITER~~ @ 1446998632.242737
+Thread: 132 - Writer is waiting on wrt
+Thread: 133 - ~~NEW READER~~ @ 1446998632.242739
+Thread: 133 - Reader is waiting on mutex
+Thread: 134 - ~~NEW WRITER~~ @ 1446998632.242742
+Thread: 134 - Writer is waiting on wrt
+Thread: 135 - ~~NEW READER~~ @ 1446998632.242744
+Thread: 135 - Reader is waiting on mutex
+Thread: 136 - ~~NEW WRITER~~ @ 1446998632.242746
+Thread: 136 - Writer is waiting on wrt
+Thread: 137 - ~~NEW WRITER~~ @ 1446998632.242748
+Thread: 137 - Writer is waiting on wrt
+Thread: 138 - ~~NEW READER~~ @ 1446998632.242750
+Thread: 138 - Reader is waiting on mutex
+Thread: 139 - ~~NEW WRITER~~ @ 1446998632.242752
+Thread: 139 - Writer is waiting on wrt
+Thread: 140 - ~~NEW READER~~ @ 1446998632.242754
+Thread: 140 - Reader is waiting on mutex
+Thread: 141 - ~~NEW READER~~ @ 1446998632.242757
+Thread: 141 - Reader is waiting on mutex
+Thread: 142 - ~~NEW READER~~ @ 1446998632.242759
+Thread: 142 - Reader is waiting on mutex
+Thread: 143 - ~~NEW WRITER~~ @ 1446998632.242761
+Thread: 143 - Writer is waiting on wrt
+Thread: 144 - ~~NEW WRITER~~ @ 1446998632.242763
+Thread: 144 - Writer is waiting on wrt
+Thread: 145 - ~~NEW READER~~ @ 1446998632.242765
+Thread: 145 - Reader is waiting on mutex
+Thread: 146 - ~~NEW WRITER~~ @ 1446998632.242767
+Thread: 146 - Writer is waiting on wrt
+Thread: 147 - ~~NEW WRITER~~ @ 1446998632.242769
+Thread: 147 - Writer is waiting on wrt
+Thread: 148 - ~~NEW READER~~ @ 1446998632.242771
+Thread: 148 - Reader is waiting on mutex
+Thread: 149 - ~~NEW WRITER~~ @ 1446998632.242773
+Thread: 149 - Writer is waiting on wrt
+Thread: 150 - ~~NEW READER~~ @ 1446998632.242775
+Thread: 150 - Reader is waiting on mutex
+Thread: 157 - ~~NEW READER~~ @ 1446998632.243616
+Thread: 157 - Reader is waiting on mutex
+Thread: 158 - ~~NEW READER~~ @ 1446998632.243619
+Thread: 158 - Reader is waiting on mutex
+Thread: 159 - ~~NEW WRITER~~ @ 1446998632.243622
+Thread: 159 - Writer is waiting on wrt
+Thread: 160 - ~~NEW WRITER~~ @ 1446998632.243624
+Thread: 160 - Writer is waiting on wrt
+Thread: 161 - ~~NEW READER~~ @ 1446998632.243626
+Thread: 161 - Reader is waiting on mutex
+Thread: 162 - ~~NEW READER~~ @ 1446998632.243628
+Thread: 162 - Reader is waiting on mutex
+Thread: 163 - ~~NEW WRITER~~ @ 1446998632.243631
+Thread: 163 - Writer is waiting on wrt
+Thread: 156 - ~~NEW WRITER~~ @ 1446998632.243633
+Thread: 156 - Writer is waiting on wrt
+Thread: 164 - ~~NEW WRITER~~ @ 1446998632.243636
+Thread: 164 - Writer is waiting on wrt
+Thread: 165 - ~~NEW WRITER~~ @ 1446998632.243638
+Thread: 165 - Writer is waiting on wrt
+Thread: 166 - ~~NEW WRITER~~ @ 1446998632.243640
+Thread: 166 - Writer is waiting on wrt
+Thread: 167 - ~~NEW READER~~ @ 1446998632.243642
+Thread: 167 - Reader is waiting on mutex
+Thread: 168 - ~~NEW READER~~ @ 1446998632.243645
+Thread: 168 - Reader is waiting on mutex
+Thread: 169 - ~~NEW WRITER~~ @ 1446998632.243647
+Thread: 169 - Writer is waiting on wrt
+Thread: 170 - ~~NEW READER~~ @ 1446998632.243649
+Thread: 170 - Reader is waiting on mutex
+Thread: 171 - ~~NEW WRITER~~ @ 1446998632.243651
+Thread: 171 - Writer is waiting on wrt
+Thread: 172 - ~~NEW WRITER~~ @ 1446998632.243654
+Thread: 172 - Writer is waiting on wrt
+Thread: 173 - ~~NEW WRITER~~ @ 1446998632.243656
+Thread: 173 - Writer is waiting on wrt
+Thread: 155 - ~~NEW WRITER~~ @ 1446998632.243658
+Thread: 155 - Writer is waiting on wrt
+Thread: 174 - ~~NEW READER~~ @ 1446998632.243660
+Thread: 174 - Reader is waiting on mutex
+Thread: 175 - ~~NEW WRITER~~ @ 1446998632.243663
+Thread: 175 - Writer is waiting on wrt
+Thread: 176 - ~~NEW READER~~ @ 1446998632.243665
+Thread: 176 - Reader is waiting on mutex
+Thread: 177 - ~~NEW READER~~ @ 1446998632.243667
+Thread: 177 - Reader is waiting on mutex
+Thread: 178 - ~~NEW WRITER~~ @ 1446998632.243670
+Thread: 178 - Writer is waiting on wrt
+Thread: 179 - ~~NEW READER~~ @ 1446998632.243672
+Thread: 179 - Reader is waiting on mutex
+Thread: 180 - ~~NEW READER~~ @ 1446998632.243674
+Thread: 180 - Reader is waiting on mutex
+Thread: 181 - ~~NEW WRITER~~ @ 1446998632.243676
+Thread: 181 - Writer is waiting on wrt
+Thread: 182 - ~~NEW WRITER~~ @ 1446998632.243679
+Thread: 182 - Writer is waiting on wrt
+Thread: 183 - ~~NEW READER~~ @ 1446998632.243681
+Thread: 183 - Reader is waiting on mutex
+Thread: 154 - ~~NEW READER~~ @ 1446998632.243683
+Thread: 154 - Reader is waiting on mutex
+Thread: 184 - ~~NEW WRITER~~ @ 1446998632.243685
+Thread: 184 - Writer is waiting on wrt
+Thread: 185 - ~~NEW READER~~ @ 1446998632.243687
+Thread: 185 - Reader is waiting on mutex
+Thread: 186 - ~~NEW WRITER~~ @ 1446998632.243689
+Thread: 186 - Writer is waiting on wrt
+Thread: 187 - ~~NEW READER~~ @ 1446998632.243691
+Thread: 187 - Reader is waiting on mutex
+Thread: 188 - ~~NEW READER~~ @ 1446998632.243694
+Thread: 188 - Reader is waiting on mutex
+Thread: 189 - ~~NEW READER~~ @ 1446998632.243702
+Thread: 189 - Reader is waiting on mutex
+Thread: 190 - ~~NEW READER~~ @ 1446998632.243704
+Thread: 190 - Reader is waiting on mutex
+Thread: 191 - ~~NEW READER~~ @ 1446998632.243706
+Thread: 191 - Reader is waiting on mutex
+Thread: 192 - ~~NEW WRITER~~ @ 1446998632.243709
+Thread: 192 - Writer is waiting on wrt
+Thread: 193 - ~~NEW READER~~ @ 1446998632.243711
+Thread: 193 - Reader is waiting on mutex
+Thread: 194 - ~~NEW WRITER~~ @ 1446998632.243713
+Thread: 194 - Writer is waiting on wrt
+Thread: 195 - ~~NEW READER~~ @ 1446998632.243715
+Thread: 195 - Reader is waiting on mutex
+Thread: 196 - ~~NEW READER~~ @ 1446998632.243718
+Thread: 196 - Reader is waiting on mutex
+Thread: 197 - ~~NEW READER~~ @ 1446998632.243720
+Thread: 197 - Reader is waiting on mutex
+Thread: 198 - ~~NEW WRITER~~ @ 1446998632.243722
+Thread: 198 - Writer is waiting on wrt
+Thread: 199 - ~~NEW READER~~ @ 1446998632.243724
+Thread: 199 - Reader is waiting on mutex
+Thread: 153 - ~~NEW WRITER~~ @ 1446998632.243727
+Thread: 153 - Writer is waiting on wrt
+Thread: 152 - ~~NEW READER~~ @ 1446998632.243729
+Thread: 152 - Reader is waiting on mutex
+Thread: 151 - ~~NEW WRITER~~ @ 1446998632.243731
+Thread: 151 - Writer is waiting on wrt
+Thread: 6 - Writer signals wrt @ 1446998632.343366
+Thread: 7 - Writer enters critical section
+Thread: 7 - Writer signals wrt @ 1446998632.444166
+Thread: 8 - Writer enters critical section
+Thread: 8 - Writer signals wrt @ 1446998632.545158
+Thread: 9 - Writer enters critical section
+Thread: 9 - Writer signals wrt @ 1446998632.646265
+Thread: 5 - Writer enters critical section
+Thread: 5 - Writer signals wrt @ 1446998632.746453
+Thread: 10 - Writer enters critical section
+Thread: 10 - Writer signals wrt @ 1446998632.846673
+Thread: 11 - Reader signals mutex
+Thread: 11 - Reader enters critical section
+Thread: 13 - Reader incremented readcount to 2
+Thread: 13 - Reader signals mutex
+Thread: 13 - Reader enters critical section
+Thread: 18 - Reader incremented readcount to 3
+Thread: 18 - Reader signals mutex
+Thread: 18 - Reader enters critical section
+Thread: 20 - Reader incremented readcount to 4
+Thread: 20 - Reader signals mutex
+Thread: 20 - Reader enters critical section
+Thread: 3 - Reader incremented readcount to 5
+Thread: 3 - Reader signals mutex
+Thread: 3 - Reader enters critical section
+Thread: 26 - Reader incremented readcount to 6
+Thread: 26 - Reader signals mutex
+Thread: 26 - Reader enters critical section
+Thread: 32 - Reader incremented readcount to 7
+Thread: 32 - Reader signals mutex
+Thread: 32 - Reader enters critical section
+Thread: 33 - Reader incremented readcount to 8
+Thread: 33 - Reader signals mutex
+Thread: 33 - Reader enters critical section
+Thread: 34 - Reader incremented readcount to 9
+Thread: 34 - Reader signals mutex
+Thread: 34 - Reader enters critical section
+Thread: 36 - Reader incremented readcount to 10
+Thread: 36 - Reader signals mutex
+Thread: 36 - Reader enters critical section
+Thread: 37 - Reader incremented readcount to 11
+Thread: 37 - Reader signals mutex
+Thread: 37 - Reader enters critical section
+Thread: 38 - Reader incremented readcount to 12
+Thread: 38 - Reader signals mutex
+Thread: 38 - Reader enters critical section
+Thread: 39 - Reader incremented readcount to 13
+Thread: 39 - Reader signals mutex
+Thread: 39 - Reader enters critical section
+Thread: 41 - Reader incremented readcount to 14
+Thread: 41 - Reader signals mutex
+Thread: 41 - Reader enters critical section
+Thread: 62 - Reader incremented readcount to 15
+Thread: 62 - Reader signals mutex
+Thread: 62 - Reader enters critical section
+Thread: 57 - Reader incremented readcount to 16
+Thread: 57 - Reader signals mutex
+Thread: 57 - Reader enters critical section
+Thread: 50 - Reader incremented readcount to 17
+Thread: 50 - Reader signals mutex
+Thread: 50 - Reader enters critical section
+Thread: 51 - Reader incremented readcount to 18
+Thread: 51 - Reader signals mutex
+Thread: 51 - Reader enters critical section
+Thread: 44 - Reader incremented readcount to 19
+Thread: 44 - Reader signals mutex
+Thread: 44 - Reader enters critical section
+Thread: 45 - Reader incremented readcount to 20
+Thread: 45 - Reader signals mutex
+Thread: 45 - Reader enters critical section
+Thread: 46 - Reader incremented readcount to 21
+Thread: 46 - Reader signals mutex
+Thread: 46 - Reader enters critical section
+Thread: 49 - Reader incremented readcount to 22
+Thread: 49 - Reader signals mutex
+Thread: 49 - Reader enters critical section
+Thread: 54 - Reader incremented readcount to 23
+Thread: 54 - Reader signals mutex
+Thread: 54 - Reader enters critical section
+Thread: 61 - Reader incremented readcount to 24
+Thread: 61 - Reader signals mutex
+Thread: 61 - Reader enters critical section
+Thread: 42 - Reader incremented readcount to 25
+Thread: 42 - Reader signals mutex
+Thread: 42 - Reader enters critical section
+Thread: 47 - Reader incremented readcount to 26
+Thread: 47 - Reader signals mutex
+Thread: 47 - Reader enters critical section
+Thread: 48 - Reader incremented readcount to 27
+Thread: 48 - Reader signals mutex
+Thread: 48 - Reader enters critical section
+Thread: 58 - Reader incremented readcount to 28
+Thread: 58 - Reader signals mutex
+Thread: 58 - Reader enters critical section
+Thread: 59 - Reader incremented readcount to 29
+Thread: 59 - Reader signals mutex
+Thread: 59 - Reader enters critical section
+Thread: 60 - Reader incremented readcount to 30
+Thread: 60 - Reader signals mutex
+Thread: 60 - Reader enters critical section
+Thread: 63 - Reader incremented readcount to 31
+Thread: 63 - Reader signals mutex
+Thread: 63 - Reader enters critical section
+Thread: 65 - Reader incremented readcount to 32
+Thread: 65 - Reader signals mutex
+Thread: 65 - Reader enters critical section
+Thread: 66 - Reader incremented readcount to 33
+Thread: 66 - Reader signals mutex
+Thread: 66 - Reader enters critical section
+Thread: 70 - Reader incremented readcount to 34
+Thread: 70 - Reader signals mutex
+Thread: 70 - Reader enters critical section
+Thread: 71 - Reader incremented readcount to 35
+Thread: 71 - Reader signals mutex
+Thread: 71 - Reader enters critical section
+Thread: 72 - Reader incremented readcount to 36
+Thread: 72 - Reader signals mutex
+Thread: 72 - Reader enters critical section
+Thread: 73 - Reader incremented readcount to 37
+Thread: 73 - Reader signals mutex
+Thread: 73 - Reader enters critical section
+Thread: 75 - Reader incremented readcount to 38
+Thread: 75 - Reader signals mutex
+Thread: 75 - Reader enters critical section
+Thread: 77 - Reader incremented readcount to 39
+Thread: 77 - Reader signals mutex
+Thread: 77 - Reader enters critical section
+Thread: 80 - Reader incremented readcount to 40
+Thread: 80 - Reader signals mutex
+Thread: 80 - Reader enters critical section
+Thread: 81 - Reader incremented readcount to 41
+Thread: 81 - Reader signals mutex
+Thread: 81 - Reader enters critical section
+Thread: 82 - Reader incremented readcount to 42
+Thread: 82 - Reader signals mutex
+Thread: 82 - Reader enters critical section
+Thread: 1 - Reader incremented readcount to 43
+Thread: 1 - Reader signals mutex
+Thread: 1 - Reader enters critical section
+Thread: 83 - Reader incremented readcount to 44
+Thread: 83 - Reader signals mutex
+Thread: 83 - Reader enters critical section
+Thread: 85 - Reader incremented readcount to 45
+Thread: 85 - Reader signals mutex
+Thread: 85 - Reader enters critical section
+Thread: 86 - Reader incremented readcount to 46
+Thread: 86 - Reader signals mutex
+Thread: 86 - Reader enters critical section
+Thread: 88 - Reader incremented readcount to 47
+Thread: 88 - Reader signals mutex
+Thread: 88 - Reader enters critical section
+Thread: 89 - Reader incremented readcount to 48
+Thread: 89 - Reader signals mutex
+Thread: 89 - Reader enters critical section
+Thread: 93 - Reader incremented readcount to 49
+Thread: 93 - Reader signals mutex
+Thread: 93 - Reader enters critical section
+Thread: 94 - Reader incremented readcount to 50
+Thread: 94 - Reader signals mutex
+Thread: 94 - Reader enters critical section
+Thread: 95 - Reader incremented readcount to 51
+Thread: 95 - Reader signals mutex
+Thread: 95 - Reader enters critical section
+Thread: 96 - Reader incremented readcount to 52
+Thread: 96 - Reader signals mutex
+Thread: 96 - Reader enters critical section
+Thread: 99 - Reader incremented readcount to 53
+Thread: 99 - Reader signals mutex
+Thread: 99 - Reader enters critical section
+Thread: 100 - Reader incremented readcount to 54
+Thread: 100 - Reader signals mutex
+Thread: 100 - Reader enters critical section
+Thread: 102 - Reader incremented readcount to 55
+Thread: 102 - Reader signals mutex
+Thread: 102 - Reader enters critical section
+Thread: 103 - Reader incremented readcount to 56
+Thread: 103 - Reader signals mutex
+Thread: 103 - Reader enters critical section
+Thread: 104 - Reader incremented readcount to 57
+Thread: 104 - Reader signals mutex
+Thread: 104 - Reader enters critical section
+Thread: 105 - Reader incremented readcount to 58
+Thread: 105 - Reader signals mutex
+Thread: 105 - Reader enters critical section
+Thread: 107 - Reader incremented readcount to 59
+Thread: 107 - Reader signals mutex
+Thread: 107 - Reader enters critical section
+Thread: 108 - Reader incremented readcount to 60
+Thread: 108 - Reader signals mutex
+Thread: 108 - Reader enters critical section
+Thread: 118 - Reader incremented readcount to 61
+Thread: 118 - Reader signals mutex
+Thread: 118 - Reader enters critical section
+Thread: 119 - Reader incremented readcount to 62
+Thread: 119 - Reader signals mutex
+Thread: 119 - Reader enters critical section
+Thread: 120 - Reader incremented readcount to 63
+Thread: 120 - Reader signals mutex
+Thread: 120 - Reader enters critical section
+Thread: 121 - Reader incremented readcount to 64
+Thread: 121 - Reader signals mutex
+Thread: 121 - Reader enters critical section
+Thread: 122 - Reader incremented readcount to 65
+Thread: 122 - Reader signals mutex
+Thread: 122 - Reader enters critical section
+Thread: 124 - Reader incremented readcount to 66
+Thread: 124 - Reader signals mutex
+Thread: 124 - Reader enters critical section
+Thread: 125 - Reader incremented readcount to 67
+Thread: 125 - Reader signals mutex
+Thread: 125 - Reader enters critical section
+Thread: 0 - Reader incremented readcount to 68
+Thread: 0 - Reader signals mutex
+Thread: 0 - Reader enters critical section
+Thread: 131 - Reader incremented readcount to 69
+Thread: 131 - Reader signals mutex
+Thread: 131 - Reader enters critical section
+Thread: 133 - Reader incremented readcount to 70
+Thread: 133 - Reader signals mutex
+Thread: 133 - Reader enters critical section
+Thread: 135 - Reader incremented readcount to 71
+Thread: 135 - Reader signals mutex
+Thread: 135 - Reader enters critical section
+Thread: 138 - Reader incremented readcount to 72
+Thread: 138 - Reader signals mutex
+Thread: 138 - Reader enters critical section
+Thread: 140 - Reader incremented readcount to 73
+Thread: 140 - Reader signals mutex
+Thread: 140 - Reader enters critical section
+Thread: 141 - Reader incremented readcount to 74
+Thread: 141 - Reader signals mutex
+Thread: 141 - Reader enters critical section
+Thread: 142 - Reader incremented readcount to 75
+Thread: 142 - Reader signals mutex
+Thread: 142 - Reader enters critical section
+Thread: 145 - Reader incremented readcount to 76
+Thread: 145 - Reader signals mutex
+Thread: 145 - Reader enters critical section
+Thread: 148 - Reader incremented readcount to 77
+Thread: 148 - Reader signals mutex
+Thread: 148 - Reader enters critical section
+Thread: 150 - Reader incremented readcount to 78
+Thread: 150 - Reader signals mutex
+Thread: 150 - Reader enters critical section
+Thread: 157 - Reader incremented readcount to 79
+Thread: 157 - Reader signals mutex
+Thread: 157 - Reader enters critical section
+Thread: 158 - Reader incremented readcount to 80
+Thread: 158 - Reader signals mutex
+Thread: 158 - Reader enters critical section
+Thread: 161 - Reader incremented readcount to 81
+Thread: 161 - Reader signals mutex
+Thread: 161 - Reader enters critical section
+Thread: 162 - Reader incremented readcount to 82
+Thread: 162 - Reader signals mutex
+Thread: 162 - Reader enters critical section
+Thread: 167 - Reader incremented readcount to 83
+Thread: 167 - Reader signals mutex
+Thread: 167 - Reader enters critical section
+Thread: 168 - Reader incremented readcount to 84
+Thread: 168 - Reader signals mutex
+Thread: 168 - Reader enters critical section
+Thread: 170 - Reader incremented readcount to 85
+Thread: 170 - Reader signals mutex
+Thread: 170 - Reader enters critical section
+Thread: 174 - Reader incremented readcount to 86
+Thread: 174 - Reader signals mutex
+Thread: 174 - Reader enters critical section
+Thread: 176 - Reader incremented readcount to 87
+Thread: 176 - Reader signals mutex
+Thread: 176 - Reader enters critical section
+Thread: 177 - Reader incremented readcount to 88
+Thread: 177 - Reader signals mutex
+Thread: 177 - Reader enters critical section
+Thread: 179 - Reader incremented readcount to 89
+Thread: 179 - Reader signals mutex
+Thread: 179 - Reader enters critical section
+Thread: 180 - Reader incremented readcount to 90
+Thread: 180 - Reader signals mutex
+Thread: 180 - Reader enters critical section
+Thread: 183 - Reader incremented readcount to 91
+Thread: 183 - Reader signals mutex
+Thread: 183 - Reader enters critical section
+Thread: 154 - Reader incremented readcount to 92
+Thread: 154 - Reader signals mutex
+Thread: 154 - Reader enters critical section
+Thread: 185 - Reader incremented readcount to 93
+Thread: 185 - Reader signals mutex
+Thread: 185 - Reader enters critical section
+Thread: 187 - Reader incremented readcount to 94
+Thread: 187 - Reader signals mutex
+Thread: 187 - Reader enters critical section
+Thread: 188 - Reader incremented readcount to 95
+Thread: 188 - Reader signals mutex
+Thread: 188 - Reader enters critical section
+Thread: 189 - Reader incremented readcount to 96
+Thread: 189 - Reader signals mutex
+Thread: 189 - Reader enters critical section
+Thread: 190 - Reader incremented readcount to 97
+Thread: 190 - Reader signals mutex
+Thread: 190 - Reader enters critical section
+Thread: 191 - Reader incremented readcount to 98
+Thread: 191 - Reader signals mutex
+Thread: 191 - Reader enters critical section
+Thread: 193 - Reader incremented readcount to 99
+Thread: 193 - Reader signals mutex
+Thread: 193 - Reader enters critical section
+Thread: 195 - Reader incremented readcount to 100
+Thread: 195 - Reader signals mutex
+Thread: 195 - Reader enters critical section
+Thread: 196 - Reader incremented readcount to 101
+Thread: 196 - Reader signals mutex
+Thread: 196 - Reader enters critical section
+Thread: 197 - Reader incremented readcount to 102
+Thread: 197 - Reader signals mutex
+Thread: 197 - Reader enters critical section
+Thread: 199 - Reader incremented readcount to 103
+Thread: 199 - Reader signals mutex
+Thread: 199 - Reader enters critical section
+Thread: 152 - Reader incremented readcount to 104
+Thread: 152 - Reader signals mutex
+Thread: 152 - Reader enters critical section
+Thread: 11 - Reader waits on mutex
+Thread: 11 - Reader finished (decremented readcount to 103)
+Thread: 11 - Reader signals mutex @ 1446998632.946905
+Thread: 13 - Reader waits on mutex
+Thread: 13 - Reader finished (decremented readcount to 102)
+Thread: 13 - Reader signals mutex @ 1446998632.946981
+Thread: 18 - Reader waits on mutex
+Thread: 18 - Reader finished (decremented readcount to 101)
+Thread: 18 - Reader signals mutex @ 1446998632.947004
+Thread: 20 - Reader waits on mutex
+Thread: 20 - Reader finished (decremented readcount to 100)
+Thread: 20 - Reader signals mutex @ 1446998632.947025
+Thread: 3 - Reader waits on mutex
+Thread: 3 - Reader finished (decremented readcount to 99)
+Thread: 3 - Reader signals mutex @ 1446998632.947047
+Thread: 26 - Reader waits on mutex
+Thread: 26 - Reader finished (decremented readcount to 98)
+Thread: 26 - Reader signals mutex @ 1446998632.947323
+Thread: 32 - Reader waits on mutex
+Thread: 32 - Reader finished (decremented readcount to 97)
+Thread: 32 - Reader signals mutex @ 1446998632.947352
+Thread: 33 - Reader waits on mutex
+Thread: 33 - Reader finished (decremented readcount to 96)
+Thread: 33 - Reader signals mutex @ 1446998632.947373
+Thread: 34 - Reader waits on mutex
+Thread: 34 - Reader finished (decremented readcount to 95)
+Thread: 34 - Reader signals mutex @ 1446998632.947392
+Thread: 36 - Reader waits on mutex
+Thread: 36 - Reader finished (decremented readcount to 94)
+Thread: 36 - Reader signals mutex @ 1446998632.947460
+Thread: 37 - Reader waits on mutex
+Thread: 37 - Reader finished (decremented readcount to 93)
+Thread: 37 - Reader signals mutex @ 1446998632.947484
+Thread: 38 - Reader waits on mutex
+Thread: 38 - Reader finished (decremented readcount to 92)
+Thread: 38 - Reader signals mutex @ 1446998632.947503
+Thread: 39 - Reader waits on mutex
+Thread: 39 - Reader finished (decremented readcount to 91)
+Thread: 39 - Reader signals mutex @ 1446998632.947522
+Thread: 41 - Reader waits on mutex
+Thread: 41 - Reader finished (decremented readcount to 90)
+Thread: 41 - Reader signals mutex @ 1446998632.947541
+Thread: 60 - Reader waits on mutex
+Thread: 60 - Reader finished (decremented readcount to 89)
+Thread: 60 - Reader signals mutex @ 1446998632.947561
+Thread: 42 - Reader waits on mutex
+Thread: 42 - Reader finished (decremented readcount to 88)
+Thread: 42 - Reader signals mutex @ 1446998632.947581
+Thread: 54 - Reader waits on mutex
+Thread: 54 - Reader finished (decremented readcount to 87)
+Thread: 54 - Reader signals mutex @ 1446998632.947602
+Thread: 62 - Reader waits on mutex
+Thread: 62 - Reader finished (decremented readcount to 86)
+Thread: 62 - Reader signals mutex @ 1446998632.947622
+Thread: 49 - Reader waits on mutex
+Thread: 49 - Reader finished (decremented readcount to 85)
+Thread: 49 - Reader signals mutex @ 1446998632.947641
+Thread: 46 - Reader waits on mutex
+Thread: 46 - Reader finished (decremented readcount to 84)
+Thread: 46 - Reader signals mutex @ 1446998632.947660
+Thread: 57 - Reader waits on mutex
+Thread: 57 - Reader finished (decremented readcount to 83)
+Thread: 57 - Reader signals mutex @ 1446998632.947679
+Thread: 61 - Reader waits on mutex
+Thread: 61 - Reader finished (decremented readcount to 82)
+Thread: 61 - Reader signals mutex @ 1446998632.947697
+Thread: 48 - Reader waits on mutex
+Thread: 48 - Reader finished (decremented readcount to 81)
+Thread: 48 - Reader signals mutex @ 1446998632.947716
+Thread: 59 - Reader waits on mutex
+Thread: 59 - Reader finished (decremented readcount to 80)
+Thread: 59 - Reader signals mutex @ 1446998632.947735
+Thread: 47 - Reader waits on mutex
+Thread: 47 - Reader finished (decremented readcount to 79)
+Thread: 47 - Reader signals mutex @ 1446998632.947753
+Thread: 51 - Reader waits on mutex
+Thread: 51 - Reader finished (decremented readcount to 78)
+Thread: 51 - Reader signals mutex @ 1446998632.947771
+Thread: 45 - Reader waits on mutex
+Thread: 45 - Reader finished (decremented readcount to 77)
+Thread: 45 - Reader signals mutex @ 1446998632.947790
+Thread: 50 - Reader waits on mutex
+Thread: 50 - Reader finished (decremented readcount to 76)
+Thread: 50 - Reader signals mutex @ 1446998632.947808
+Thread: 63 - Reader waits on mutex
+Thread: 63 - Reader finished (decremented readcount to 75)
+Thread: 63 - Reader signals mutex @ 1446998632.947827
+Thread: 65 - Reader waits on mutex
+Thread: 65 - Reader finished (decremented readcount to 74)
+Thread: 65 - Reader signals mutex @ 1446998632.947846
+Thread: 66 - Reader waits on mutex
+Thread: 66 - Reader finished (decremented readcount to 73)
+Thread: 66 - Reader signals mutex @ 1446998632.947865
+Thread: 58 - Reader waits on mutex
+Thread: 58 - Reader finished (decremented readcount to 72)
+Thread: 58 - Reader signals mutex @ 1446998632.947885
+Thread: 70 - Reader waits on mutex
+Thread: 70 - Reader finished (decremented readcount to 71)
+Thread: 70 - Reader signals mutex @ 1446998632.947903
+Thread: 44 - Reader waits on mutex
+Thread: 44 - Reader finished (decremented readcount to 70)
+Thread: 44 - Reader signals mutex @ 1446998632.947922
+Thread: 71 - Reader waits on mutex
+Thread: 71 - Reader finished (decremented readcount to 69)
+Thread: 71 - Reader signals mutex @ 1446998632.947941
+Thread: 72 - Reader waits on mutex
+Thread: 72 - Reader finished (decremented readcount to 68)
+Thread: 72 - Reader signals mutex @ 1446998632.947960
+Thread: 73 - Reader waits on mutex
+Thread: 73 - Reader finished (decremented readcount to 67)
+Thread: 73 - Reader signals mutex @ 1446998632.947978
+Thread: 75 - Reader waits on mutex
+Thread: 75 - Reader finished (decremented readcount to 66)
+Thread: 75 - Reader signals mutex @ 1446998632.948011
+Thread: 77 - Reader waits on mutex
+Thread: 77 - Reader finished (decremented readcount to 65)
+Thread: 77 - Reader signals mutex @ 1446998632.948033
+Thread: 80 - Reader waits on mutex
+Thread: 80 - Reader finished (decremented readcount to 64)
+Thread: 80 - Reader signals mutex @ 1446998632.948180
+Thread: 81 - Reader waits on mutex
+Thread: 81 - Reader finished (decremented readcount to 63)
+Thread: 81 - Reader signals mutex @ 1446998632.948202
+Thread: 82 - Reader waits on mutex
+Thread: 82 - Reader finished (decremented readcount to 62)
+Thread: 82 - Reader signals mutex @ 1446998632.948221
+Thread: 1 - Reader waits on mutex
+Thread: 1 - Reader finished (decremented readcount to 61)
+Thread: 1 - Reader signals mutex @ 1446998632.948240
+Thread: 83 - Reader waits on mutex
+Thread: 83 - Reader finished (decremented readcount to 60)
+Thread: 83 - Reader signals mutex @ 1446998632.948261
+Thread: 85 - Reader waits on mutex
+Thread: 85 - Reader finished (decremented readcount to 59)
+Thread: 85 - Reader signals mutex @ 1446998632.948280
+Thread: 86 - Reader waits on mutex
+Thread: 86 - Reader finished (decremented readcount to 58)
+Thread: 86 - Reader signals mutex @ 1446998632.948299
+Thread: 88 - Reader waits on mutex
+Thread: 88 - Reader finished (decremented readcount to 57)
+Thread: 88 - Reader signals mutex @ 1446998632.948318
+Thread: 89 - Reader waits on mutex
+Thread: 89 - Reader finished (decremented readcount to 56)
+Thread: 89 - Reader signals mutex @ 1446998632.948335
+Thread: 93 - Reader waits on mutex
+Thread: 93 - Reader finished (decremented readcount to 55)
+Thread: 93 - Reader signals mutex @ 1446998632.948354
+Thread: 94 - Reader waits on mutex
+Thread: 94 - Reader finished (decremented readcount to 54)
+Thread: 94 - Reader signals mutex @ 1446998632.948373
+Thread: 96 - Reader waits on mutex
+Thread: 96 - Reader finished (decremented readcount to 53)
+Thread: 96 - Reader signals mutex @ 1446998632.948393
+Thread: 95 - Reader waits on mutex
+Thread: 95 - Reader finished (decremented readcount to 52)
+Thread: 95 - Reader signals mutex @ 1446998632.948411
+Thread: 99 - Reader waits on mutex
+Thread: 99 - Reader finished (decremented readcount to 51)
+Thread: 99 - Reader signals mutex @ 1446998632.948430
+Thread: 100 - Reader waits on mutex
+Thread: 100 - Reader finished (decremented readcount to 50)
+Thread: 100 - Reader signals mutex @ 1446998632.948449
+Thread: 102 - Reader waits on mutex
+Thread: 102 - Reader finished (decremented readcount to 49)
+Thread: 102 - Reader signals mutex @ 1446998632.948469
+Thread: 103 - Reader waits on mutex
+Thread: 103 - Reader finished (decremented readcount to 48)
+Thread: 103 - Reader signals mutex @ 1446998632.948488
+Thread: 104 - Reader waits on mutex
+Thread: 104 - Reader finished (decremented readcount to 47)
+Thread: 104 - Reader signals mutex @ 1446998632.948506
+Thread: 105 - Reader waits on mutex
+Thread: 105 - Reader finished (decremented readcount to 46)
+Thread: 105 - Reader signals mutex @ 1446998632.948526
+Thread: 107 - Reader waits on mutex
+Thread: 107 - Reader finished (decremented readcount to 45)
+Thread: 107 - Reader signals mutex @ 1446998632.948544
+Thread: 108 - Reader waits on mutex
+Thread: 108 - Reader finished (decremented readcount to 44)
+Thread: 108 - Reader signals mutex @ 1446998632.948564
+Thread: 118 - Reader waits on mutex
+Thread: 118 - Reader finished (decremented readcount to 43)
+Thread: 118 - Reader signals mutex @ 1446998632.948582
+Thread: 119 - Reader waits on mutex
+Thread: 119 - Reader finished (decremented readcount to 42)
+Thread: 119 - Reader signals mutex @ 1446998632.948601
+Thread: 120 - Reader waits on mutex
+Thread: 120 - Reader finished (decremented readcount to 41)
+Thread: 120 - Reader signals mutex @ 1446998632.948619
+Thread: 121 - Reader waits on mutex
+Thread: 121 - Reader finished (decremented readcount to 40)
+Thread: 121 - Reader signals mutex @ 1446998632.948637
+Thread: 122 - Reader waits on mutex
+Thread: 122 - Reader finished (decremented readcount to 39)
+Thread: 122 - Reader signals mutex @ 1446998632.948673
+Thread: 124 - Reader waits on mutex
+Thread: 124 - Reader finished (decremented readcount to 38)
+Thread: 124 - Reader signals mutex @ 1446998632.948696
+Thread: 125 - Reader waits on mutex
+Thread: 125 - Reader finished (decremented readcount to 37)
+Thread: 125 - Reader signals mutex @ 1446998632.948715
+Thread: 0 - Reader waits on mutex
+Thread: 0 - Reader finished (decremented readcount to 36)
+Thread: 0 - Reader signals mutex @ 1446998632.948734
+Thread: 131 - Reader waits on mutex
+Thread: 131 - Reader finished (decremented readcount to 35)
+Thread: 131 - Reader signals mutex @ 1446998632.948754
+Thread: 133 - Reader waits on mutex
+Thread: 133 - Reader finished (decremented readcount to 34)
+Thread: 133 - Reader signals mutex @ 1446998632.948774
+Thread: 135 - Reader waits on mutex
+Thread: 135 - Reader finished (decremented readcount to 33)
+Thread: 135 - Reader signals mutex @ 1446998632.948793
+Thread: 138 - Reader waits on mutex
+Thread: 138 - Reader finished (decremented readcount to 32)
+Thread: 138 - Reader signals mutex @ 1446998632.948812
+Thread: 140 - Reader waits on mutex
+Thread: 140 - Reader finished (decremented readcount to 31)
+Thread: 140 - Reader signals mutex @ 1446998632.948832
+Thread: 141 - Reader waits on mutex
+Thread: 141 - Reader finished (decremented readcount to 30)
+Thread: 141 - Reader signals mutex @ 1446998632.948851
+Thread: 142 - Reader waits on mutex
+Thread: 142 - Reader finished (decremented readcount to 29)
+Thread: 142 - Reader signals mutex @ 1446998632.948870
+Thread: 145 - Reader waits on mutex
+Thread: 145 - Reader finished (decremented readcount to 28)
+Thread: 145 - Reader signals mutex @ 1446998632.948889
+Thread: 148 - Reader waits on mutex
+Thread: 148 - Reader finished (decremented readcount to 27)
+Thread: 148 - Reader signals mutex @ 1446998632.948908
+Thread: 150 - Reader waits on mutex
+Thread: 150 - Reader finished (decremented readcount to 26)
+Thread: 150 - Reader signals mutex @ 1446998632.948927
+Thread: 157 - Reader waits on mutex
+Thread: 157 - Reader finished (decremented readcount to 25)
+Thread: 157 - Reader signals mutex @ 1446998632.948947
+Thread: 158 - Reader waits on mutex
+Thread: 158 - Reader finished (decremented readcount to 24)
+Thread: 158 - Reader signals mutex @ 1446998632.948966
+Thread: 161 - Reader waits on mutex
+Thread: 161 - Reader finished (decremented readcount to 23)
+Thread: 161 - Reader signals mutex @ 1446998632.948985
+Thread: 162 - Reader waits on mutex
+Thread: 162 - Reader finished (decremented readcount to 22)
+Thread: 162 - Reader signals mutex @ 1446998632.949005
+Thread: 167 - Reader waits on mutex
+Thread: 167 - Reader finished (decremented readcount to 21)
+Thread: 167 - Reader signals mutex @ 1446998632.949072
+Thread: 168 - Reader waits on mutex
+Thread: 168 - Reader finished (decremented readcount to 20)
+Thread: 168 - Reader signals mutex @ 1446998632.949093
+Thread: 170 - Reader waits on mutex
+Thread: 170 - Reader finished (decremented readcount to 19)
+Thread: 170 - Reader signals mutex @ 1446998632.949112
+Thread: 174 - Reader waits on mutex
+Thread: 174 - Reader finished (decremented readcount to 18)
+Thread: 174 - Reader signals mutex @ 1446998632.949133
+Thread: 176 - Reader waits on mutex
+Thread: 176 - Reader finished (decremented readcount to 17)
+Thread: 176 - Reader signals mutex @ 1446998632.949152
+Thread: 177 - Reader waits on mutex
+Thread: 177 - Reader finished (decremented readcount to 16)
+Thread: 177 - Reader signals mutex @ 1446998632.949172
+Thread: 179 - Reader waits on mutex
+Thread: 179 - Reader finished (decremented readcount to 15)
+Thread: 179 - Reader signals mutex @ 1446998632.949190
+Thread: 180 - Reader waits on mutex
+Thread: 180 - Reader finished (decremented readcount to 14)
+Thread: 180 - Reader signals mutex @ 1446998632.949209
+Thread: 183 - Reader waits on mutex
+Thread: 183 - Reader finished (decremented readcount to 13)
+Thread: 183 - Reader signals mutex @ 1446998632.949229
+Thread: 154 - Reader waits on mutex
+Thread: 154 - Reader finished (decremented readcount to 12)
+Thread: 154 - Reader signals mutex @ 1446998632.949263
+Thread: 185 - Reader waits on mutex
+Thread: 185 - Reader finished (decremented readcount to 11)
+Thread: 185 - Reader signals mutex @ 1446998632.949285
+Thread: 187 - Reader waits on mutex
+Thread: 187 - Reader finished (decremented readcount to 10)
+Thread: 187 - Reader signals mutex @ 1446998632.949305
+Thread: 188 - Reader waits on mutex
+Thread: 188 - Reader finished (decremented readcount to 9)
+Thread: 188 - Reader signals mutex @ 1446998632.949325
+Thread: 189 - Reader waits on mutex
+Thread: 189 - Reader finished (decremented readcount to 8)
+Thread: 189 - Reader signals mutex @ 1446998632.949343
+Thread: 190 - Reader waits on mutex
+Thread: 190 - Reader finished (decremented readcount to 7)
+Thread: 190 - Reader signals mutex @ 1446998632.949362
+Thread: 191 - Reader waits on mutex
+Thread: 191 - Reader finished (decremented readcount to 6)
+Thread: 191 - Reader signals mutex @ 1446998632.949380
+Thread: 193 - Reader waits on mutex
+Thread: 193 - Reader finished (decremented readcount to 5)
+Thread: 193 - Reader signals mutex @ 1446998632.949399
+Thread: 195 - Reader waits on mutex
+Thread: 195 - Reader finished (decremented readcount to 4)
+Thread: 195 - Reader signals mutex @ 1446998632.949418
+Thread: 196 - Reader waits on mutex
+Thread: 196 - Reader finished (decremented readcount to 3)
+Thread: 196 - Reader signals mutex @ 1446998632.949437
+Thread: 197 - Reader waits on mutex
+Thread: 197 - Reader finished (decremented readcount to 2)
+Thread: 197 - Reader signals mutex @ 1446998632.949456
+Thread: 199 - Reader waits on mutex
+Thread: 199 - Reader finished (decremented readcount to 1)
+Thread: 199 - Reader signals mutex @ 1446998632.949475
+Thread: 152 - Reader waits on mutex
+Thread: 152 - Reader finished (decremented readcount to 0)
+Thread: 152 - Reader signals wrt
+Thread: 12 - Writer enters critical section
+Thread: 152 - Reader signals mutex @ 1446998632.949512
+Thread: 12 - Writer signals wrt @ 1446998633.49660
+Thread: 14 - Writer enters critical section
+Thread: 14 - Writer signals wrt @ 1446998633.150086
+Thread: 15 - Writer enters critical section
+Thread: 15 - Writer signals wrt @ 1446998633.251003
+Thread: 4 - Writer enters critical section
+Thread: 4 - Writer signals wrt @ 1446998633.351804
+Thread: 16 - Writer enters critical section
+Thread: 16 - Writer signals wrt @ 1446998633.452225
+Thread: 17 - Writer enters critical section
+Thread: 17 - Writer signals wrt @ 1446998633.552555
+Thread: 19 - Writer enters critical section
+Thread: 19 - Writer signals wrt @ 1446998633.653475
+Thread: 21 - Writer enters critical section
+Thread: 21 - Writer signals wrt @ 1446998633.754523
+Thread: 22 - Writer enters critical section
+Thread: 22 - Writer signals wrt @ 1446998633.855366
+Thread: 23 - Writer enters critical section
+Thread: 23 - Writer signals wrt @ 1446998633.956256
+Thread: 24 - Writer enters critical section
+Thread: 24 - Writer signals wrt @ 1446998634.56623
+Thread: 25 - Writer enters critical section
+Thread: 25 - Writer signals wrt @ 1446998634.156767
+Thread: 27 - Writer enters critical section
+Thread: 27 - Writer signals wrt @ 1446998634.257267
+Thread: 28 - Writer enters critical section
+Thread: 28 - Writer signals wrt @ 1446998634.358246
+Thread: 29 - Writer enters critical section
+Thread: 29 - Writer signals wrt @ 1446998634.458681
+Thread: 30 - Writer enters critical section
+Thread: 30 - Writer signals wrt @ 1446998634.558934
+Thread: 31 - Writer enters critical section
+Thread: 31 - Writer signals wrt @ 1446998634.659597
+Thread: 35 - Writer enters critical section
+Thread: 35 - Writer signals wrt @ 1446998634.759878
+Thread: 2 - Writer enters critical section
+Thread: 2 - Writer signals wrt @ 1446998634.860912
+Thread: 40 - Writer enters critical section
+Thread: 40 - Writer signals wrt @ 1446998634.961422
+Thread: 43 - Writer enters critical section
+Thread: 43 - Writer signals wrt @ 1446998635.61721
+Thread: 56 - Writer enters critical section
+Thread: 56 - Writer signals wrt @ 1446998635.162019
+Thread: 52 - Writer enters critical section
+Thread: 52 - Writer signals wrt @ 1446998635.262451
+Thread: 55 - Writer enters critical section
+Thread: 55 - Writer signals wrt @ 1446998635.362701
+Thread: 53 - Writer enters critical section
+Thread: 53 - Writer signals wrt @ 1446998635.463140
+Thread: 64 - Writer enters critical section
+Thread: 64 - Writer signals wrt @ 1446998635.564108
+Thread: 67 - Writer enters critical section
+Thread: 67 - Writer signals wrt @ 1446998635.664338
+Thread: 68 - Writer enters critical section
+Thread: 68 - Writer signals wrt @ 1446998635.764990
+Thread: 69 - Writer enters critical section
+Thread: 69 - Writer signals wrt @ 1446998635.865294
+Thread: 74 - Writer enters critical section
+Thread: 74 - Writer signals wrt @ 1446998635.965447
+Thread: 76 - Writer enters critical section
+Thread: 76 - Writer signals wrt @ 1446998636.65781
+Thread: 78 - Writer enters critical section
+Thread: 78 - Writer signals wrt @ 1446998636.166153
+Thread: 79 - Writer enters critical section
+Thread: 79 - Writer signals wrt @ 1446998636.266629
+Thread: 84 - Writer enters critical section
+Thread: 84 - Writer signals wrt @ 1446998636.367762
+Thread: 87 - Writer enters critical section
+Thread: 87 - Writer signals wrt @ 1446998636.467945
+Thread: 90 - Writer enters critical section
+Thread: 90 - Writer signals wrt @ 1446998636.568559
+Thread: 91 - Writer enters critical section
+Thread: 91 - Writer signals wrt @ 1446998636.668798
+Thread: 92 - Writer enters critical section
+Thread: 92 - Writer signals wrt @ 1446998636.768961
+Thread: 97 - Writer enters critical section
+Thread: 97 - Writer signals wrt @ 1446998636.869492
+Thread: 98 - Writer enters critical section
+Thread: 98 - Writer signals wrt @ 1446998636.970120
+Thread: 101 - Writer enters critical section
+Thread: 101 - Writer signals wrt @ 1446998637.70243
+Thread: 106 - Writer enters critical section
+Thread: 106 - Writer signals wrt @ 1446998637.171042
+Thread: 109 - Writer enters critical section
+Thread: 109 - Writer signals wrt @ 1446998637.271892
+Thread: 110 - Writer enters critical section
+Thread: 110 - Writer signals wrt @ 1446998637.372134
+Thread: 111 - Writer enters critical section
+Thread: 111 - Writer signals wrt @ 1446998637.472870
+Thread: 112 - Writer enters critical section
+Thread: 112 - Writer signals wrt @ 1446998637.573871
+Thread: 113 - Writer enters critical section
+Thread: 113 - Writer signals wrt @ 1446998637.674246
+Thread: 114 - Writer enters critical section
+Thread: 114 - Writer signals wrt @ 1446998637.774802
+Thread: 115 - Writer enters critical section
+Thread: 115 - Writer signals wrt @ 1446998637.876034
+Thread: 116 - Writer enters critical section
+Thread: 116 - Writer signals wrt @ 1446998637.976859
+Thread: 117 - Writer enters critical section
+Thread: 117 - Writer signals wrt @ 1446998638.77534
+Thread: 123 - Writer enters critical section
+Thread: 123 - Writer signals wrt @ 1446998638.177931
+Thread: 126 - Writer enters critical section
+Thread: 126 - Writer signals wrt @ 1446998638.278148
+Thread: 127 - Writer enters critical section
+Thread: 127 - Writer signals wrt @ 1446998638.378820
+Thread: 128 - Writer enters critical section
+Thread: 128 - Writer signals wrt @ 1446998638.479737
+Thread: 129 - Writer enters critical section
+Thread: 129 - Writer signals wrt @ 1446998638.580418
+Thread: 130 - Writer enters critical section
+Thread: 130 - Writer signals wrt @ 1446998638.680748
+Thread: 132 - Writer enters critical section
+Thread: 132 - Writer signals wrt @ 1446998638.781384
+Thread: 134 - Writer enters critical section
+Thread: 134 - Writer signals wrt @ 1446998638.881699
+Thread: 136 - Writer enters critical section
+Thread: 136 - Writer signals wrt @ 1446998638.982382
+Thread: 137 - Writer enters critical section
+Thread: 137 - Writer signals wrt @ 1446998639.83220
+Thread: 139 - Writer enters critical section
+Thread: 139 - Writer signals wrt @ 1446998639.183981
+Thread: 143 - Writer enters critical section
+Thread: 143 - Writer signals wrt @ 1446998639.284613
+Thread: 144 - Writer enters critical section
+Thread: 144 - Writer signals wrt @ 1446998639.384881
+Thread: 146 - Writer enters critical section
+Thread: 146 - Writer signals wrt @ 1446998639.485203
+Thread: 147 - Writer enters critical section
+Thread: 147 - Writer signals wrt @ 1446998639.585484
+Thread: 149 - Writer enters critical section
+Thread: 149 - Writer signals wrt @ 1446998639.686568
+Thread: 159 - Writer enters critical section
+Thread: 159 - Writer signals wrt @ 1446998639.786929
+Thread: 160 - Writer enters critical section
+Thread: 160 - Writer signals wrt @ 1446998639.887153
+Thread: 163 - Writer enters critical section
+Thread: 163 - Writer signals wrt @ 1446998639.987406
+Thread: 156 - Writer enters critical section
+Thread: 156 - Writer signals wrt @ 1446998640.87560
+Thread: 164 - Writer enters critical section
+Thread: 164 - Writer signals wrt @ 1446998640.188133
+Thread: 165 - Writer enters critical section
+Thread: 165 - Writer signals wrt @ 1446998640.288647
+Thread: 166 - Writer enters critical section
+Thread: 166 - Writer signals wrt @ 1446998640.388822
+Thread: 169 - Writer enters critical section
+Thread: 169 - Writer signals wrt @ 1446998640.489966
+Thread: 171 - Writer enters critical section
+Thread: 171 - Writer signals wrt @ 1446998640.590311
+Thread: 172 - Writer enters critical section
+Thread: 172 - Writer signals wrt @ 1446998640.690453
+Thread: 173 - Writer enters critical section
+Thread: 173 - Writer signals wrt @ 1446998640.790752
+Thread: 155 - Writer enters critical section
+Thread: 155 - Writer signals wrt @ 1446998640.892017
+Thread: 175 - Writer enters critical section
+Thread: 175 - Writer signals wrt @ 1446998640.992473
+Thread: 178 - Writer enters critical section
+Thread: 178 - Writer signals wrt @ 1446998641.92874
+Thread: 181 - Writer enters critical section
+Thread: 181 - Writer signals wrt @ 1446998641.193681
+Thread: 182 - Writer enters critical section
+Thread: 182 - Writer signals wrt @ 1446998641.293882
+Thread: 184 - Writer enters critical section
+Thread: 184 - Writer signals wrt @ 1446998641.394045
+Thread: 186 - Writer enters critical section
+Thread: 186 - Writer signals wrt @ 1446998641.495033
+Thread: 192 - Writer enters critical section
+Thread: 192 - Writer signals wrt @ 1446998641.596243
+Thread: 194 - Writer enters critical section
+Thread: 194 - Writer signals wrt @ 1446998641.696789
+Thread: 198 - Writer enters critical section
+Thread: 198 - Writer signals wrt @ 1446998641.797044
+Thread: 153 - Writer enters critical section
+Thread: 153 - Writer signals wrt @ 1446998641.897977
+Thread: 151 - Writer enters critical section
+Thread: 151 - Writer signals wrt @ 1446998641.998142
+*** LAST THREAD INCOMING (201) ***
+...
+Thread: 201 - ~~NEW WRITER~~ @ 1446998648.248202
+Thread: 201 - Writer is waiting on wrt
+Thread: 201 - Writer enters critical section
+Thread: 201 - Writer signals wrt @ 1446998648.349021
