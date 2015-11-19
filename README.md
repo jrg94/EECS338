@@ -40,3 +40,13 @@ NOTES:
 	was also used instead of a linked list. It was difficult to trace
 	the issue regardless. It seems shmat needs to be used to create 
 	shared memory spaces for every node.
+
+# Assignment-5
+How to Compile:
+1. Navigate to src
+2. Run 'make'
+
+How to Execute:
+1. Navigate to src
+2. Run './as5'
+3. If this fails, execute 'make clean' -> then run 'make'
