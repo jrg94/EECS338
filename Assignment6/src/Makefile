@@ -16,7 +16,7 @@ DEPS = $(patsubst %, $(IDIR)/%, $(_DEPS))
 # The first line supplies the object file list
 # The second line searches the current directory for
 # the object files and moves them to ODIR
-_OBJ = main.o client.o server.o
+_OBJ = main.o tina.o judy.o server.o
 OBJ = $(patsubst %, $(ODIR)/%, $(_OBJ))
 
 # If any of the .c files or .h files change, recompile them
