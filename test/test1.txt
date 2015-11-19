@@ -1,0 +1,64 @@
+PID: 4247 - Someone wants to deposit $100!
+PID: 4247 - Depositer:100 is waiting on mutex.
+PID: 4247 - Depositer:100 has passed mutex.
+wcount = 0
+PID: 4247 - Depositer:100 is signaling mutex
+*** PID: 4247 - Shared variable status
+*** balance = 600, wcount = 0
+PID: 4248 - Someone wants to deposit $200!
+PID: 4248 - Depositer:200 is waiting on mutex.
+PID: 4248 - Depositer:200 has passed mutex.
+wcount = 0
+PID: 4248 - Depositer:200 is signaling mutex
+*** PID: 4248 - Shared variable status
+*** balance = 800, wcount = 0
+PID: 4249 - Someone is waiting on mutex to withdraw $200.
+PID: 4249 - Withdrawer:200 has passed mutex.
+PID: 4249 - A withdrawal of $200 was made!
+PID: 4249 - Withdrawer:200 is signaling mutex.
+*** PID: 4249 - Shared variable status
+*** balance = 600, wcount = 0
+PID: 4250 - Someone is waiting on mutex to withdraw $500.
+PID: 4250 - Withdrawer:500 has passed mutex.
+PID: 4250 - A withdrawal of $500 was made!
+PID: 4250 - Withdrawer:500 is signaling mutex.
+*** PID: 4250 - Shared variable status
+*** balance = 100, wcount = 0
+PID: 4251 - Someone wants to deposit $500!
+PID: 4251 - Depositer:500 is waiting on mutex.
+PID: 4251 - Depositer:500 has passed mutex.
+wcount = 0
+PID: 4251 - Depositer:500 is signaling mutex
+*** PID: 4251 - Shared variable status
+*** balance = 600, wcount = 0
+PID: 4252 - Someone wants to deposit $1000!
+PID: 4252 - Depositer:1000 is waiting on mutex.
+PID: 4252 - Depositer:1000 has passed mutex.
+wcount = 0
+PID: 4252 - Depositer:1000 is signaling mutex
+*** PID: 4252 - Shared variable status
+*** balance = 1600, wcount = 0
+PID: 4253 - Someone is waiting on mutex to withdraw $100.
+PID: 4253 - Withdrawer:100 has passed mutex.
+PID: 4253 - A withdrawal of $100 was made!
+PID: 4253 - Withdrawer:100 is signaling mutex.
+*** PID: 4253 - Shared variable status
+*** balance = 1500, wcount = 0
+PID: 4254 - Someone is waiting on mutex to withdraw $200.
+PID: 4254 - Withdrawer:200 has passed mutex.
+PID: 4254 - A withdrawal of $200 was made!
+PID: 4254 - Withdrawer:200 is signaling mutex.
+*** PID: 4254 - Shared variable status
+*** balance = 1300, wcount = 0
+PID: 4255 - Someone is waiting on mutex to withdraw $300.
+PID: 4255 - Withdrawer:300 has passed mutex.
+PID: 4255 - A withdrawal of $300 was made!
+PID: 4255 - Withdrawer:300 is signaling mutex.
+*** PID: 4255 - Shared variable status
+*** balance = 1000, wcount = 0
+PID: 4256 - Someone is waiting on mutex to withdraw $400.
+PID: 4256 - Withdrawer:400 has passed mutex.
+PID: 4256 - A withdrawal of $400 was made!
+PID: 4256 - Withdrawer:400 is signaling mutex.
+*** PID: 4256 - Shared variable status
+*** balance = 600, wcount = 0
