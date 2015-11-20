@@ -1,29 +1,22 @@
 /**
  * Author: Jeremy Griffith
- * Assignment 6 Main
  */
-
 #include "as6.h"
 
-int main (int argc, char * argv[]) {
-
-	char *server;
+int main(int argc, char* argv[]) {
+	srand(time(NULL));
 	CLIENT *c;
 
-	// Test the command line input
 	if (argc != 2) {
-		printf("A server name was not specified\n");
-		printf("Try %s <server name>\n", argv[0]);
-		exit(1);
+		// Print error
 	}
 
-	// Create client
-	server = argv[1];
-	c = clnt_create(server, COOKIE_JAR, COOKIE_JAR_VERSION, "udp"); 
-	if(c == NULL) {
-		clnt_pcreateerror("Error creating client");
+	char *server = argv[1];
+	c = clnt_create(server, COOKIE_JAR, COOKIE_JAR_VERSION, "udp");
+	if (c == NULL) {
+		// Print error & exit
 		exit(EXIT_FAILURE);
-	} 
+	}
 
 	clnt_destroy(c);
 	return 0;
