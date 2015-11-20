@@ -5,12 +5,9 @@
 
 #include "as6.h"
 
-char *server;
-char machine[200];
-char username[256];
-
 int main (int argc, char * argv[]) {
 
+	char *server;
 	CLIENT *c;
 
 	// Test the command line input
@@ -20,16 +17,13 @@ int main (int argc, char * argv[]) {
 		exit(1);
 	}
 
-	// Store the server name
+	// Create client
 	server = argv[1];
-
-	// An RPC function for retrieving the hostname
-	gethostname(machine, 200);
-	snprintf(username, 256, "%s%d", machine, getpid());
-
-	// Begin program functionality
-
-	c = clnt_create(server, 
+	c = clnt_create(server, COOKIE_JAR, COOKIE_JAR_VERSION, "udp"); 
+	if(c == NULL) {
+		clnt_pcreateerror("Error creating client");
+		exit(EXIT_FAILURE);
+	} 
 
 	clnt_destroy(c);
 	return 0;
