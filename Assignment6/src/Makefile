@@ -1,33 +1,24 @@
 # Assignment 6 Makefile
-
-IDIR = ../include
 CC = gcc
-CFLAGS = -I$(IDIR)
-ODIR = obj
+CFLAGS = -Wall
 
-# Moves listed header files to IDIR
-# The first line supplies the dependency list
-# The second line searches the current directory for
-# the dependencies and moves them to the IDIR
-_DEPS = as6.h
-DEPS = $(patsubst %, $(IDIR)/%, $(_DEPS)) 
+# Client source
+CSOURCE = main.c tina.c judy.c cookies_clnt.c cookies_xdr.c
 
-# Moves the listed object files to ODIR
-# The first line supplies the object file list
-# The second line searches the current directory for
-# the object files and moves them to ODIR
-_OBJ = main.o tina.o judy.o server.o
-OBJ = $(patsubst %, $(ODIR)/%, $(_OBJ))
+# Server source TODO add server source
+SSOURCE = cookies_svc.c cookies_xdr.c
 
-# If any of the .c files or .h files change, recompile them
-$(ODIR)/%.o: %.c $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS)
+RPCSRC = cookies.x
+RPCGEN = cookies.h cookies_clnt.c cookies_svc.c cookies_xdr.c
 
-# If any of the .o files change, relink them
-as6: $(OBJ)
-	$(CC) -o $@ $^ $(CFLAGS)
+CLIENT = main
+SERVER = server
 
-# A clean command for emptying the obj directory
-.PHONY: clean
-clean:
-	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~
+all: $(CLIENT) $(SERVER)
+
+server: $(SSOURCE) $(RPCGEN)
+	$(CC) $(CFLAGS) -o $(SERVER) $(SSOURCE)
+
+# Run to execute rpcgen
+$(RPCGEN): $(RPCSRC)
+	rpcgen $(RPCSRC)
