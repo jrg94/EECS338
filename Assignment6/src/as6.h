@@ -12,4 +12,4 @@
 #define TINA 1
 #define JUDY 2
 
-int askForCookies(int judyOrTina, CLIENT *c);
+int askForCookies(CLIENT *c);

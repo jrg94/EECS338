@@ -22,11 +22,7 @@ int main(int argc, char* argv[]) {
 
 	// Begin asking for cookies
 	while (1) {
-		#ifdef CLIENT_JUDY
-		askForCookies(JUDY, c);
-		#elif CLIENT_TINA
-		askForCookies(TINA, c);
-		#endif
+		askForCookies(c);
 	}
 
 	clnt_destroy(c);
