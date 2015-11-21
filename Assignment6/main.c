@@ -3,7 +3,11 @@
  */
 #include "as6.h"
 
-inline void printInfo() {
+/**
+ * A handy function for printing out
+ * imformation about this remote procedure
+ */ 
+void printInfo() {
         char hostname[256];
 
         gethostname(hostname, sizeof hostname);
@@ -21,6 +25,9 @@ inline void printInfo() {
         printf("%s-%s-%d: ", buf, hostname, getpid());
 }
 
+/**
+ * The client main function
+ */
 int main(int argc, char* argv[]) {
 	srand(time(NULL));
 	CLIENT *c;
@@ -29,7 +36,7 @@ int main(int argc, char* argv[]) {
 	if (argc != 2) {
 		// Print error
 		printInfo();
-		printf("Not enough inputs\n");
+		printf("Not enough inputs -> ");
 		printf("Try: ./<executable> <server>\n");
 		exit(EXIT_FAILURE);
 	}
@@ -52,21 +59,26 @@ int main(int argc, char* argv[]) {
 		
 		// Cookie jar is empty
 		if (response == -2) {
+			printInfo();
 			printf("Cookie jar is empty\n");
 			break;
 		}
 		// Judy has to wait
 		else if (response == -1) {
+			printInfo();
 			printf("Judy must wait until Tina has 2 cookies\n");
 			continue;
 		}
 		// Free to take a cookie
 		else if (response == 1) {
+			printInfo();
 			printf("Got a cookie\n");
 			continue;
 		}
 		
 		sleep(1);
+		printInfo();
+		printf("Finished\n");
 	}
 
 	clnt_destroy(c);

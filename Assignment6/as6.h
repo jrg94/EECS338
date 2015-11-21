@@ -6,6 +6,7 @@
 #include "cookies.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <unistd.h>
 #include <time.h>
 
 #define MAX_COOKIES 20

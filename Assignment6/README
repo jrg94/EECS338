@@ -1,0 +1,13 @@
+-- Assignment 6 as written by Jeremy Griffith --
+
+This solution was based primarily off of the smokers
+problem solution from 2013. Many of the same elements
+can be seen throughout this solution. For instance, 
+a run.sh file was written to speedup testing. 
+
+-- In order to run this solution --
+
+1. Try ./run.sh. This may need to be edited to use
+your username and password. Otherwise, this script
+will handle building the solution as well as running
+it on several remote PCs.
