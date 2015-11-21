@@ -3,6 +3,9 @@
  * Assignment 6 Client-Judy
  */
 
+#ifndef CLIENT_JUDY
+#define CLIENT_JUDY
+
 #include "as6.h"
 
-CLIENT *client;
+#endif /* CLIENT_JUDY */

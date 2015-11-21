@@ -7,15 +7,26 @@ int main(int argc, char* argv[]) {
 	srand(time(NULL));
 	CLIENT *c;
 
+	// Test input
 	if (argc != 2) {
 		// Print error
 	}
 
+	// Create client
 	char *server = argv[1];
 	c = clnt_create(server, COOKIE_JAR, COOKIE_JAR_VERSION, "udp");
 	if (c == NULL) {
 		// Print error & exit
 		exit(EXIT_FAILURE);
+	}
+
+	// Begin asking for cookies
+	while (1) {
+		#ifdef CLIENT_JUDY
+		askForCookies(JUDY, c);
+		#elif CLIENT_TINA
+		askForCookies(TINA, c);
+		#endif
 	}
 
 	clnt_destroy(c);
