@@ -13,7 +13,7 @@ int askForCookies(CLIENT *c) {
 
 	int* result = get_me_my_cookie_1(&cs, c);
 	
-	return cs.CanHaveCookie;
+	return *result;
 }
 
 /*

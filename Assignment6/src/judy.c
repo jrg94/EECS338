@@ -9,8 +9,11 @@
 #include "as6.h"
 
 int askForCookies(CLIENT *c) {
+	struct CookieStruct cs = {0, JUDY};
 	
-	return 0;
+	int *result = get_me_my_cookie_1(&cs, c);
+	
+	return *result;
 }
 
 /*

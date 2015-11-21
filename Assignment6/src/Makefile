@@ -15,7 +15,7 @@ RPCGEN = cookies.h cookies_clnt.c cookies_svc.c cookies_xdr.c
 
 # Client and server processes
 TCLIENT = tina
-JCLIENT = judy 
+JCLIENT = judy
 SERVER = mother
 
 all: $(JCLIENT) $(TCLIENT) $(SERVER)
