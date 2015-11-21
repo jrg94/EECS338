@@ -32,3 +32,7 @@ mother: $(SSOURCE) $(RPCGEN)
 # Run to execute rpcgen
 $(RPCGEN): $(RPCSRC)
 	rpcgen $(RPCSRC)
+
+.PHONY: clean
+clean:
+	rm -f $(JCLIENT) $(TCLIENT) $(SERVER) 
