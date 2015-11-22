@@ -1,5 +1,8 @@
 /**
  * Author: Jeremy Griffith
+ * 
+ * Serves as the main function for both
+ * client processes
  */
 #include "as6.h"
 
@@ -10,18 +13,21 @@
 void printInfo() {
         char hostname[256];
 
+	// Retrieves the machine name
         gethostname(hostname, sizeof hostname);
 
         char fmt[64], buf[64];
         struct timeval tv;
         struct tm *tm;
 
+	// Retrieves the time of day
         gettimeofday(&tv, NULL);
         if ((tm = localtime(&tv.tv_sec)) != NULL) {
                 strftime(fmt, sizeof fmt, "%H:%M:%S.%%03u", tm);
                 snprintf(buf, sizeof buf, fmt, tv.tv_usec);
         }
 
+	// Outputs the time, hostname, and pid for this process
         printf("%s-%s-%d: ", buf, hostname, getpid());
 }
 

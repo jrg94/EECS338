@@ -7,6 +7,11 @@
 
 #include "as6.h"
 
+/**
+ * Overrides the askForCookies function
+ * which is used to differentiate between
+ * the two separate client processes
+ */
 int askForCookies(CLIENT *c) {
 	
 	struct CookieStruct cs = {0, TINA};

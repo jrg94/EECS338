@@ -11,3 +11,23 @@ a run.sh file was written to speedup testing.
 your username and password. Otherwise, this script
 will handle building the solution as well as running
 it on several remote PCs.
+
+-- If the above fails --
+
+Each process can be started by hand. For instance, 
+try running the following commands into separate
+terminals.
+
+./mother
+./tina localhost
+./judy localhost
+
+-- If all else fails --
+
+Try running a 'make clean' on the directory. 
+This will remove all executable binaries, and 
+you'll be able to freshly build the project.
+
+You can also try a fresh 'rpcgen cookies.x' on
+the directory. This will rewrite the stubs for 
+your client and server processes.
