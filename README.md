@@ -42,11 +42,11 @@ NOTES:
 	shared memory spaces for every node.
 
 # Assignment-5
-How to Compile:
-1. Navigate to src
-2. Run 'make'
+HOW TO BUILD:
+	1. Navigate to src
+	2. Run 'make'
 
-How to Execute:
-1. Navigate to src
-2. Run './as5'
-3. If this fails, execute 'make clean' -> then run 'make'
+HOW TO RUN:
+	1. Navigate to src
+	2. Run './as5'
+	3. If this fails, execute 'make clean' -> then run 'make'
