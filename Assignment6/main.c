@@ -67,15 +67,14 @@ int main(int argc, char* argv[]) {
 		else if (response == -1) {
 			printInfo();
 			printf("Judy must wait until Tina has 2 cookies\n");
-			continue;
 		}
 		// Free to take a cookie
 		else if (response == 1) {
 			printInfo();
 			printf("Got a cookie\n");
-			continue;
 		}
 		
+		fflush(stdout);
 		sleep(1);
 		printInfo();
 		printf("Finished\n");
